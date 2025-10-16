@@ -10,6 +10,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Mail, Phone, MapPin, Clock, CheckCircle2 } from "@/components/icons"
 import { useState } from "react"
+import { countries } from "@/lib/countries"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -17,6 +18,7 @@ export default function ContactPage() {
     email: "",
     phone: "",
     company: "",
+    country: "",
     service: "",
     message: "",
   })
@@ -163,6 +165,24 @@ export default function ContactPage() {
                         onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                         className="mt-2"
                       />
+                    </div>
+                    <div>
+                      <Label htmlFor="country">Country</Label>
+                      <Select
+                        value={formData.country}
+                        onValueChange={(value) => setFormData({ ...formData, country: value })}
+                      >
+                        <SelectTrigger id="country" className="mt-2">
+                          <SelectValue placeholder="Select your country" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {countries.map((country) => (
+                            <SelectItem key={country.value} value={country.value}>
+                              {country.label}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
                     </div>
                     <div>
                       <Label htmlFor="service">Service of Interest *</Label>

@@ -7,8 +7,10 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle2 } from "lucide-react"
+import { CheckCircle2 } from "@/components/icons"
+import { countries } from "@/lib/countries"
 
 interface ServiceOnboardingFormProps {
   serviceName: string
@@ -18,6 +20,7 @@ interface ServiceOnboardingFormProps {
 export function ServiceOnboardingForm({ serviceName, serviceDescription }: ServiceOnboardingFormProps) {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  const [selectedCountry, setSelectedCountry] = useState("")
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -82,7 +85,18 @@ export function ServiceOnboardingForm({ serviceName, serviceDescription }: Servi
 
           <div className="space-y-2">
             <Label htmlFor="country">Country *</Label>
-            <Input id="country" name="country" required />
+            <Select required value={selectedCountry} onValueChange={setSelectedCountry}>
+              <SelectTrigger id="country">
+                <SelectValue placeholder="Select your country" />
+              </SelectTrigger>
+              <SelectContent>
+                {countries.map((country) => (
+                  <SelectItem key={country.value} value={country.value}>
+                    {country.label}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           </div>
 
           <div className="space-y-2">

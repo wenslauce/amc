@@ -1,18 +1,30 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { ServiceOnboardingForm } from "@/components/service-onboarding-form"
-import { Truck, CheckCircle2, Shield, MapPin, Package } from "lucide-react"
+import { Truck, Shield, MapPin, Package, ArrowRight } from "@/components/icons"
 import Link from "next/link"
 
 export default function LogisticsPage() {
-  const services = [
-    "Freight & Customs Coordination",
-    "Cross-Border Distribution",
-    "Shipment Risk Management",
-    "SKR-Secured Logistics",
-    "Armored Transport Services",
-    "Warehousing & Storage",
-    "Last-Mile Delivery",
-    "Real-time Tracking & Monitoring",
+  const subServices = [
+    {
+      title: "Freight & Customs Coordination",
+      description: "Expert customs brokerage and freight forwarding across all borders",
+      href: "/services/logistics/freight-customs",
+    },
+    {
+      title: "Cross-Border Distribution",
+      description: "Regional distribution networks connecting markets across continents",
+      href: "/services/logistics/cross-border",
+    },
+    {
+      title: "Armored Transport Services",
+      description: "Maximum security for high-value assets with armed escorts",
+      href: "/services/logistics/armored-transport",
+    },
+    {
+      title: "Warehousing & Storage",
+      description: "Secure, climate-controlled storage with inventory management",
+      href: "/services/logistics/warehousing",
+    },
   ]
 
   const features = [
@@ -65,15 +77,42 @@ export default function LogisticsPage() {
 
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-4">Our Logistics Services</h2>
+          <p className="text-lg text-muted-foreground mb-12 max-w-3xl">
+            Comprehensive logistics solutions designed for high-value commodities and assets moving across international
+            borders.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-16">
+            {subServices.map((service, index) => (
+              <Link key={index} href={service.href}>
+                <Card className="card-hover h-full group">
+                  <CardContent className="p-6">
+                    <div className="flex items-start justify-between mb-3">
+                      <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                        {service.title}
+                      </h3>
+                      <ArrowRight
+                        className="text-primary flex-shrink-0 group-hover:translate-x-1 transition-transform"
+                        size={20}
+                      />
+                    </div>
+                    <p className="text-muted-foreground">{service.description}</p>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Comprehensive Logistics Solutions</h2>
+              <h2 className="text-3xl font-bold mb-6">Why Choose G1 Logistics</h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 Our logistics services are designed for businesses moving high-value commodities and assets across
                 international borders, with specialized security and tracking capabilities.
               </p>
 
-              <div className="grid sm:grid-cols-3 gap-6 mb-8">
+              <div className="grid sm:grid-cols-3 gap-6">
                 {features.map((feature, index) => (
                   <Card key={index} className="card-hover">
                     <CardContent className="p-6">
@@ -82,16 +121,6 @@ export default function LogisticsPage() {
                       <p className="text-sm text-muted-foreground">{feature.description}</p>
                     </CardContent>
                   </Card>
-                ))}
-              </div>
-
-              <h3 className="text-2xl font-bold mb-4">Our Services</h3>
-              <div className="space-y-3">
-                {services.map((service, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <CheckCircle2 className="text-primary flex-shrink-0 mt-1" size={20} />
-                    <span className="text-muted-foreground">{service}</span>
-                  </div>
                 ))}
               </div>
             </div>

@@ -1,24 +1,33 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { ServiceOnboardingForm } from "@/components/service-onboarding-form"
-import { Globe, CheckCircle2, Wheat, Zap, Droplet } from "lucide-react"
+import { Globe, CheckCircle2, Wheat, Zap, Droplet, ArrowRight } from "@/components/icons"
 import Link from "next/link"
 
 export default function CommoditiesTradingPage() {
-  const commodities = [
+  const subServices = [
     {
-      icon: Wheat,
       title: "Agricultural Commodities",
-      items: ["Tea", "Coffee", "Grains", "Cocoa", "Sugar"],
+      description: "Tea, coffee, grains, cocoa, sugar, and specialty agricultural products",
+      href: "/services/commodities-trading/agricultural",
+      icon: Wheat,
     },
     {
+      title: "Metals & Minerals",
+      description: "Gold, copper, aluminum, cobalt, lithium, and rare earth elements",
+      href: "/services/commodities-trading/metals",
       icon: Zap,
-      title: "Metals & Energy",
-      items: ["Gold", "Copper", "Aluminum", "Coal", "Natural Gas"],
     },
     {
+      title: "Oil & Gas Trading",
+      description: "Crude oil, refined products, LNG, and petroleum derivatives",
+      href: "/services/commodities-trading/oil-gas",
       icon: Droplet,
-      title: "Oil & Gas",
-      items: ["Crude Oil", "Refined Products", "LNG", "Petroleum"],
+    },
+    {
+      title: "Energy Products",
+      description: "Coal, natural gas, electricity, and carbon credits",
+      href: "/services/commodities-trading/energy-products",
+      icon: Zap,
     },
   ]
 
@@ -63,29 +72,45 @@ export default function CommoditiesTradingPage() {
 
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-4">Commodities We Trade</h2>
+          <p className="text-lg text-muted-foreground mb-12 max-w-3xl">
+            We facilitate the trading and brokerage of a wide range of commodities, connecting buyers and sellers across
+            global markets with secure, efficient transactions.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-16">
+            {subServices.map((service, index) => (
+              <Link key={index} href={service.href}>
+                <Card className="card-hover h-full group">
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4 mb-3">
+                      <service.icon className="text-primary flex-shrink-0" size={32} strokeWidth={1.5} />
+                      <div className="flex-1">
+                        <div className="flex items-start justify-between mb-2">
+                          <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                            {service.title}
+                          </h3>
+                          <ArrowRight
+                            className="text-primary flex-shrink-0 group-hover:translate-x-1 transition-transform"
+                            size={20}
+                          />
+                        </div>
+                        <p className="text-muted-foreground">{service.description}</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Commodities We Trade</h2>
+              <h2 className="text-3xl font-bold mb-6">Why Choose G1 for Commodities Trading</h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                We facilitate the trading and brokerage of a wide range of commodities, connecting buyers and sellers
-                across global markets with secure, efficient transactions.
+                Our deep market knowledge, global network, and comprehensive support services make us the ideal partner
+                for your commodities trading needs.
               </p>
-
-              <div className="space-y-6 mb-8">
-                {commodities.map((category, index) => (
-                  <Card key={index} className="card-hover">
-                    <CardContent className="p-6">
-                      <div className="flex items-start gap-4">
-                        <category.icon className="text-primary flex-shrink-0" size={32} strokeWidth={1.5} />
-                        <div>
-                          <h3 className="font-semibold mb-2">{category.title}</h3>
-                          <p className="text-sm text-muted-foreground">{category.items.join(", ")}</p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
 
               <h3 className="text-2xl font-bold mb-4">Our Services</h3>
               <div className="space-y-3">
