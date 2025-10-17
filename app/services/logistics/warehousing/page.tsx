@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { ServiceOnboardingForm } from "@/components/service-onboarding-form"
-import { Package, CheckCircle2, Shield, Clock, Thermometer, Lock } from "@/components/icons"
+import { Package, CheckCircle2, Shield, Clock, Lock } from "@/components/icons"
 import Link from "next/link"
 
 export default function WarehousingPage() {
@@ -11,7 +11,7 @@ export default function WarehousingPage() {
       description: "24/7 security monitoring with controlled access and surveillance systems",
     },
     {
-      icon: Thermometer,
+      icon: Shield,
       title: "Climate Control",
       description: "Temperature and humidity-controlled storage for sensitive commodities",
     },
