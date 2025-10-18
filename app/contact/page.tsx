@@ -40,7 +40,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Headquarters",
-      details: ["Nairobi, Kenya", "East Africa Hub"],
+      details: ["Villa 46, No 25, Mwananchi Road, Syokimau, Nairobi, Kenya", "East Africa Hub"],
     },
     {
       icon: Phone,
@@ -50,7 +50,7 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Email",
-      details: ["info@g1group.com", "support@g1group.com"],
+      details: ["info@g1groupofcompanies.com", "support@g1groupofcompanies.com"],
     },
     {
       icon: Clock,

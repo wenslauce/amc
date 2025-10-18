@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ServiceOnboardingForm } from "@/components/service-onboarding-form"
 import { Truck, Shield, MapPin, Package, ArrowRight } from "@/components/icons"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function LogisticsPage() {
   const subServices = [
@@ -9,21 +10,25 @@ export default function LogisticsPage() {
       title: "Freight & Customs Coordination",
       description: "Expert customs brokerage and freight forwarding across all borders",
       href: "/services/logistics/freight-customs",
+      image: "/logistics-freight.jpg",
     },
     {
       title: "Cross-Border Distribution",
       description: "Regional distribution networks connecting markets across continents",
       href: "/services/logistics/cross-border",
+      image: "/logistics-distribution.jpg",
     },
     {
       title: "Armored Transport Services",
       description: "Maximum security for high-value assets with armed escorts",
       href: "/services/logistics/armored-transport",
+      image: "/logistics-armored.jpg",
     },
     {
       title: "Warehousing & Storage",
       description: "Secure, climate-controlled storage with inventory management",
       href: "/services/logistics/warehousing",
+      image: "/logistics-warehouse.jpg",
     },
   ]
 
@@ -86,7 +91,15 @@ export default function LogisticsPage() {
           <div className="grid md:grid-cols-2 gap-6 mb-16">
             {subServices.map((service, index) => (
               <Link key={index} href={service.href}>
-                <Card className="card-hover h-full group">
+                <Card className="card-hover h-full group overflow-hidden">
+                  <div className="relative h-48 w-full overflow-hidden bg-muted">
+                    <Image
+                      src={service.image || "/placeholder.svg"}
+                      alt={service.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                   <CardContent className="p-6">
                     <div className="flex items-start justify-between mb-3">
                       <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">

@@ -100,7 +100,9 @@ export function Footer() {
             <ul className="space-y-4 text-sm mb-6">
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="mt-0.5 flex-shrink-0 text-accent" />
-                <span className="text-primary-foreground/80">Nairobi, Kenya</span>
+                <span className="text-primary-foreground/80">
+                  Villa 46, No 25, Mwananchi Road, Syokimau, Nairobi, Kenya
+                </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="flex-shrink-0 text-accent" />
@@ -108,7 +110,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="flex-shrink-0 text-accent" />
-                <span className="text-primary-foreground/80">info@g1group.com</span>
+                <span className="text-primary-foreground/80">info@g1groupofcompanies.com</span>
               </li>
             </ul>
             <Link

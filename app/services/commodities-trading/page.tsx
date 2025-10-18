@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ServiceOnboardingForm } from "@/components/service-onboarding-form"
 import { Globe, CheckCircle2, Wheat, Zap, Droplet, ArrowRight } from "@/components/icons"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function CommoditiesTradingPage() {
   const subServices = [
@@ -10,24 +11,28 @@ export default function CommoditiesTradingPage() {
       description: "Tea, coffee, grains, cocoa, sugar, and specialty agricultural products",
       href: "/services/commodities-trading/agricultural",
       icon: Wheat,
+      image: "/commodity-agricultural.jpg",
     },
     {
       title: "Metals & Minerals",
       description: "Gold, copper, aluminum, cobalt, lithium, and rare earth elements",
       href: "/services/commodities-trading/metals",
       icon: Zap,
+      image: "/commodity-metals.jpg",
     },
     {
       title: "Oil & Gas Trading",
       description: "Crude oil, refined products, LNG, and petroleum derivatives",
       href: "/services/commodities-trading/oil-gas",
       icon: Droplet,
+      image: "/commodity-oil-gas.jpg",
     },
     {
       title: "Energy Products",
       description: "Coal, natural gas, electricity, and carbon credits",
       href: "/services/commodities-trading/energy-products",
       icon: Zap,
+      image: "/commodity-energy.jpg",
     },
   ]
 
@@ -81,7 +86,15 @@ export default function CommoditiesTradingPage() {
           <div className="grid md:grid-cols-2 gap-6 mb-16">
             {subServices.map((service, index) => (
               <Link key={index} href={service.href}>
-                <Card className="card-hover h-full group">
+                <Card className="card-hover h-full group overflow-hidden">
+                  <div className="relative h-48 w-full overflow-hidden bg-muted">
+                    <Image
+                      src={service.image || "/placeholder.svg"}
+                      alt={service.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4 mb-3">
                       <service.icon className="text-primary flex-shrink-0" size={32} strokeWidth={1.5} />

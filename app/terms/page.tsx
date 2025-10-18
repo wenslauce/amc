@@ -270,9 +270,9 @@ export default function TermsOfServicePage() {
                 <div className="bg-muted p-6 rounded-lg mt-4">
                   <p className="font-semibold text-foreground">G1 Holdings & Security Limited</p>
                   <p>Legal Department</p>
-                  <p>Email: legal@g1group.com</p>
+                  <p>Email: info@g1groupofcompanies.com</p>
                   <p>Phone: +254 XXX XXX XXX</p>
-                  <p>Address: Nairobi, Kenya</p>
+                  <p>Address: Villa 46, No 25, Mwananchi Road, Syokimau, Nairobi, Kenya</p>
                 </div>
               </div>
             </div>

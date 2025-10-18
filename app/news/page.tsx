@@ -164,7 +164,7 @@ export default function NewsPage() {
                 news.
               </p>
               <p className="text-sm text-primary-foreground/80">
-                Contact us at info@g1group.com to subscribe to our newsletter.
+                Contact us at info@g1groupofcompanies.com to subscribe to our newsletter.
               </p>
             </CardContent>
           </Card>
