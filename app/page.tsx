@@ -59,15 +59,16 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center bg-primary text-primary-foreground overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: `url('/global-trade-shipping-containers-port-aerial-view.jpg')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        />
+      <section className="relative min-h-screen flex items-center justify-center bg-primary text-primary-foreground overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
+        >
+          <source src="/video/g1loop.mp4" type="video/mp4" />
+        </video>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-balance">
             Securing High-Value Trade

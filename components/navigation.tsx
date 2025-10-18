@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X, ChevronDown } from "@/components/icons"
@@ -34,9 +35,15 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="text-2xl font-bold text-primary">G1</div>
-            <div className="hidden sm:block text-sm font-medium text-foreground">Group of Companies</div>
+          <Link href="/" className="flex items-center gap-3">
+            <Image 
+              src="/logo.png" 
+              alt="G1 Group of Companies" 
+              width={48} 
+              height={48}
+              className="object-contain"
+            />
+            <div className="hidden sm:block text-sm font-medium text-foreground">G1 Group of Companies</div>
           </Link>
 
           {/* Desktop Navigation */}
