@@ -128,13 +128,14 @@ export function Footer() {
             <div>
               <h5 className="font-semibold mb-2">Legal Disclaimer</h5>
               <p className="text-sm text-primary-foreground/70 leading-relaxed">
-                G1 Holdings & Security Limited operates as a trade facilitation and brokerage firm and does not directly
-                own or operate transportation, storage, or insurance services. All logistics, security, and insurance
-                services are provided by licensed third-party operators. We act solely as an intermediary, arranging
-                trade finance, commodities brokerage, and risk management services on behalf of clients with certified
-                and authorized service providers. Asset security, regulatory compliance, and operational safety are the
-                responsibility of the respective licensed operators. G1 Group facilitates transactions and provides
-                advisory services but does not assume liability for third-party operations.
+                G1 Holdings & Security Limited operates as a trade facilitation and brokerage firm with both owned
+                subsidiaries and strategic partnerships. While we own and operate certain companies within our group,
+                logistics, security, and insurance services may also be provided by licensed third-party operators
+                where appropriate. We arrange trade finance, commodities brokerage, and risk management services
+                through our owned entities and certified service providers. Asset security, regulatory compliance,
+                and operational safety are managed through our integrated network of owned companies and trusted
+                partners. G1 Group provides comprehensive solutions through both direct operations and strategic
+                partnerships to ensure optimal service delivery.
               </p>
             </div>
           </div>
