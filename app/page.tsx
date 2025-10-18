@@ -3,6 +3,11 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight } from "@/components/icons"
 import { AnimatedCounter } from "@/components/animated-counter"
+import { TrustCredibilitySection } from "@/components/trust-credibility-section"
+import { HowItWorksSection } from "@/components/how-it-works-section"
+import { GlobalReachSection } from "@/components/global-reach-section"
+import { TestimonialsSection } from "@/components/testimonials-section"
+import { SecurityHighlightsSection } from "@/components/security-highlights-section"
 
 export default function HomePage() {
   const services = [
@@ -102,6 +107,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <TrustCredibilitySection />
+
       {/* About Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -177,6 +184,10 @@ export default function HomePage() {
         </div>
       </section>
 
+      <HowItWorksSection />
+
+      <GlobalReachSection />
+
       {/* Why G1 Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -221,6 +232,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <TestimonialsSection />
+
+      <SecurityHighlightsSection />
 
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">
