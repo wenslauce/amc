@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Mail, Phone, MapPin, Clock, CheckCircle2 } from "@/components/icons"
+import { Mail, Phone, MapPin, Clock, CheckCircle2, AlertTriangle } from "@/components/icons"
 import { useState } from "react"
 import { countries } from "@/lib/countries"
 
@@ -25,10 +25,29 @@ export default function ContactPage() {
 
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const [success, setSuccess] = useState<string | null>(null)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
+    setError(null)
+    setSuccess(null)
+
+    // Basic validation
+    if (!formData.name.trim() || !formData.email.trim() || !formData.service.trim() || !formData.message.trim()) {
+      setError('Please fill in all required fields (Name, Email, Service, and Message)')
+      setIsLoading(false)
+      return
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailRegex.test(formData.email)) {
+      setError('Please enter a valid email address')
+      setIsLoading(false)
+      return
+    }
 
     try {
       const response = await fetch('/api/contact', {
@@ -45,10 +64,21 @@ export default function ContactPage() {
         throw new Error(result.error || 'Failed to submit form')
       }
 
+      setSuccess('Message sent successfully! We will contact you within 24 hours.')
       setIsSubmitted(true)
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        country: "",
+        service: "",
+        message: "",
+      })
     } catch (error) {
       console.error('Form submission error:', error)
-      alert('Failed to submit form. Please try again or contact us directly.')
+      setError(error instanceof Error ? error.message : 'Failed to submit form. Please try again or contact us directly.')
     } finally {
       setIsLoading(false)
     }
@@ -128,7 +158,11 @@ export default function ContactPage() {
                     <p className="text-muted-foreground">
                       We've received your inquiry. Our team will contact you within 24 hours.
                     </p>
-                    <Button onClick={() => setIsSubmitted(false)} variant="outline" className="btn-hover-lift">
+                    <Button onClick={() => {
+                      setIsSubmitted(false)
+                      setError(null)
+                      setSuccess(null)
+                    }} variant="outline" className="btn-hover-lift">
                       Send Another Message
                     </Button>
                   </div>
@@ -143,6 +177,26 @@ export default function ContactPage() {
                   </p>
                 </CardHeader>
                 <CardContent>
+                  {/* Error Message */}
+                  {error && (
+                    <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg">
+                      <div className="flex items-center gap-2">
+                        <AlertTriangle className="w-5 h-5 text-red-600" />
+                        <p className="text-red-800 text-sm">{error}</p>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Success Message */}
+                  {success && (
+                    <div className="mb-4 p-4 bg-green-50 border border-green-200 rounded-lg">
+                      <div className="flex items-center gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-600" />
+                        <p className="text-green-800 text-sm">{success}</p>
+                      </div>
+                    </div>
+                  )}
+
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
                       <Label htmlFor="name">Full Name *</Label>

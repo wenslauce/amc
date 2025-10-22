@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle2 } from "@/components/icons"
+import { CheckCircle2, AlertTriangle } from "@/components/icons"
 import { countries } from "@/lib/countries"
 
 interface ServiceOnboardingFormProps {
@@ -21,10 +21,14 @@ export function ServiceOnboardingForm({ serviceName, serviceDescription }: Servi
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [selectedCountry, setSelectedCountry] = useState("")
+  const [error, setError] = useState<string | null>(null)
+  const [success, setSuccess] = useState<string | null>(null)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsLoading(true)
+    setError(null)
+    setSuccess(null)
 
     const formData = new FormData(e.currentTarget)
     const data = {
@@ -36,6 +40,21 @@ export function ServiceOnboardingForm({ serviceName, serviceDescription }: Servi
       country: selectedCountry,
       serviceName,
       requirements: formData.get('requirements') as string,
+    }
+
+    // Basic validation
+    if (!data.firstName?.trim() || !data.lastName?.trim() || !data.email?.trim() || !data.phone?.trim() || !data.country || !data.requirements?.trim()) {
+      setError('Please fill in all required fields')
+      setIsLoading(false)
+      return
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailRegex.test(data.email)) {
+      setError('Please enter a valid email address')
+      setIsLoading(false)
+      return
     }
 
     try {
@@ -53,10 +72,11 @@ export function ServiceOnboardingForm({ serviceName, serviceDescription }: Servi
         throw new Error(result.error || 'Failed to submit quote request')
       }
 
+      setSuccess('Quote request submitted successfully! We will contact you within 24 hours.')
       setIsSubmitted(true)
     } catch (error) {
       console.error('Quote request submission error:', error)
-      alert('Failed to submit quote request. Please try again or contact us directly.')
+      setError(error instanceof Error ? error.message : 'Failed to submit quote request. Please try again or contact us directly.')
     } finally {
       setIsLoading(false)
     }
@@ -73,6 +93,14 @@ export function ServiceOnboardingForm({ serviceName, serviceDescription }: Servi
               We've received your inquiry for {serviceName}. Our team will contact you within 24 hours to discuss your
               requirements.
             </p>
+            <Button onClick={() => {
+              setIsSubmitted(false)
+              setError(null)
+              setSuccess(null)
+              setSelectedCountry("")
+            }} variant="outline" className="btn-hover-lift">
+              Submit Another Request
+            </Button>
           </div>
         </CardContent>
       </Card>
@@ -86,6 +114,26 @@ export function ServiceOnboardingForm({ serviceName, serviceDescription }: Servi
         <CardDescription>{serviceDescription}</CardDescription>
       </CardHeader>
       <CardContent>
+        {/* Error Message */}
+        {error && (
+          <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg">
+            <div className="flex items-center gap-2">
+              <AlertTriangle className="w-5 h-5 text-red-600" />
+              <p className="text-red-800 text-sm">{error}</p>
+            </div>
+          </div>
+        )}
+
+        {/* Success Message */}
+        {success && (
+          <div className="mb-4 p-4 bg-green-50 border border-green-200 rounded-lg">
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="w-5 h-5 text-green-600" />
+              <p className="text-green-800 text-sm">{success}</p>
+            </div>
+          </div>
+        )}
+
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid md:grid-cols-2 gap-4">
             <div className="space-y-2">

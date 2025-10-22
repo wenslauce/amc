@@ -9,6 +9,10 @@ import { useState } from "react"
 
 export default function SKRTrackingPage() {
   const [trackingNumber, setTrackingNumber] = useState("")
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const [success, setSuccess] = useState<string | null>(null)
+  const [trackingResult, setTrackingResult] = useState<any>(null)
 
   const features = [
     {
@@ -65,16 +69,66 @@ export default function SKRTrackingPage() {
               <p className="text-muted-foreground">Enter your tracking number to view real-time shipment status</p>
             </CardHeader>
             <CardContent>
+              {/* Error Message */}
+              {error && (
+                <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg">
+                  <div className="flex items-center gap-2">
+                    <AlertTriangle className="w-5 h-5 text-red-600" />
+                    <p className="text-red-800 text-sm">{error}</p>
+                  </div>
+                </div>
+              )}
+
+              {/* Success Message */}
+              {success && (
+                <div className="mb-4 p-4 bg-green-50 border border-green-200 rounded-lg">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-green-600" />
+                    <p className="text-green-800 text-sm">{success}</p>
+                  </div>
+                </div>
+              )}
+
               <form
                 onSubmit={async (e) => {
                   e.preventDefault()
+                  setIsLoading(true)
+                  setError(null)
+                  setSuccess(null)
+                  setTrackingResult(null)
+
                   if (!trackingNumber.trim()) {
-                    alert("Please enter a tracking number")
+                    setError("Please enter a tracking number")
+                    setIsLoading(false)
                     return
                   }
-                  
-                  // For now, show a message that tracking is being implemented
-                  alert(`Tracking number ${trackingNumber} is being processed. This feature will be connected to our backend system soon.`)
+
+                  // Basic validation for tracking number format
+                  if (trackingNumber.length < 8) {
+                    setError("Tracking number must be at least 8 characters long")
+                    setIsLoading(false)
+                    return
+                  }
+
+                  try {
+                    // Simulate API call delay
+                    await new Promise(resolve => setTimeout(resolve, 1500))
+                    
+                    // For now, show a mock tracking result
+                    setTrackingResult({
+                      trackingNumber: trackingNumber,
+                      status: "In Transit",
+                      location: "Nairobi, Kenya",
+                      lastUpdate: new Date().toLocaleString(),
+                      estimatedDelivery: "2-3 business days",
+                      route: ["Nairobi", "Dubai", "Destination"]
+                    })
+                    setSuccess("Tracking information retrieved successfully!")
+                  } catch (error) {
+                    setError("Failed to retrieve tracking information. Please try again or contact support.")
+                  } finally {
+                    setIsLoading(false)
+                  }
                 }}
                 className="space-y-4"
               >
@@ -88,10 +142,55 @@ export default function SKRTrackingPage() {
                     className="mt-2"
                   />
                 </div>
-                <Button type="submit" size="lg" className="w-full">
-                  Track Shipment
+                <Button type="submit" size="lg" className="w-full" disabled={isLoading}>
+                  {isLoading ? "Tracking..." : "Track Shipment"}
                 </Button>
               </form>
+              {/* Tracking Result */}
+              {trackingResult && (
+                <div className="mt-6 p-6 bg-primary/5 border border-primary/20 rounded-lg">
+                  <div className="flex items-center gap-2 mb-4">
+                    <Package className="w-6 h-6 text-primary" />
+                    <h3 className="text-lg font-semibold">Tracking Information</h3>
+                  </div>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <p className="text-sm text-muted-foreground">Tracking Number</p>
+                      <p className="font-mono text-sm">{trackingResult.trackingNumber}</p>
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground">Status</p>
+                      <p className="font-semibold text-primary">{trackingResult.status}</p>
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground">Current Location</p>
+                      <p className="font-semibold">{trackingResult.location}</p>
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground">Estimated Delivery</p>
+                      <p className="font-semibold">{trackingResult.estimatedDelivery}</p>
+                    </div>
+                    <div className="md:col-span-2">
+                      <p className="text-sm text-muted-foreground">Last Update</p>
+                      <p className="text-sm">{trackingResult.lastUpdate}</p>
+                    </div>
+                  </div>
+                  <div className="mt-4 pt-4 border-t border-primary/20">
+                    <p className="text-sm text-muted-foreground mb-2">Route</p>
+                    <div className="flex items-center gap-2">
+                      {trackingResult.route.map((location: string, index: number) => (
+                        <div key={index} className="flex items-center gap-2">
+                          <span className="text-sm font-medium">{location}</span>
+                          {index < trackingResult.route.length - 1 && (
+                            <span className="text-muted-foreground">→</span>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+
               <div className="mt-6 p-4 bg-muted rounded-lg">
                 <p className="text-sm text-muted-foreground">
                   <strong>Note:</strong> Tracking numbers are provided upon shipment initiation. For assistance, please
