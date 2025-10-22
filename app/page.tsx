@@ -20,7 +20,7 @@ export default function HomePage() {
     {
       image: "/service-commodities-trading.jpg",
       title: "Commodities Trading & Brokerage",
-      description: "Agricultural commodities, metals, energy products, and oil & gas trading.",
+      description: "We are the best in Gold trading, plus agricultural commodities, metals, energy products, and oil & gas.",
       href: "/services/commodities-trading",
     },
     {

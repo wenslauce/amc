@@ -22,8 +22,9 @@ export default function ServicesPage() {
       icon: Globe,
       title: "Commodities Trading & Brokerage",
       description:
-        "Expert brokerage services across agricultural commodities, metals, energy products, and oil & gas with global reach.",
+        "Expert brokerage services with Gold trading specialization. We are the best in Gold, plus agricultural commodities, metals, energy products, and oil & gas.",
       features: [
+        "Gold Trading (Our Specialty) - We are the best in Gold",
         "Agricultural Commodities (Tea, Coffee, Grains)",
         "Metals & Minerals Trading",
         "Energy Products",

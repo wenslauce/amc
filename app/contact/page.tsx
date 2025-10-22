@@ -30,10 +30,28 @@ export default function ContactPage() {
     e.preventDefault()
     setIsLoading(true)
 
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
 
-    setIsLoading(false)
-    setIsSubmitted(true)
+      const result = await response.json()
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to submit form')
+      }
+
+      setIsSubmitted(true)
+    } catch (error) {
+      console.error('Form submission error:', error)
+      alert('Failed to submit form. Please try again or contact us directly.')
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   const contactInfo = [
@@ -45,7 +63,7 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+254 XXX XXX XXX", "Mon-Fri: 8:00 AM - 6:00 PM EAT"],
+      details: ["+254 789 764 967", "Mon-Fri: 8:00 AM - 6:00 PM EAT"],
     },
     {
       icon: Mail,
@@ -281,7 +299,7 @@ export default function ContactPage() {
               <p className="text-lg mb-4">
                 For urgent matters related to active shipments or time-sensitive transactions:
               </p>
-              <p className="text-xl font-semibold">+254 XXX XXX XXX (24/7 Hotline)</p>
+              <p className="text-xl font-semibold">+243 861 005 766 (24/7 Hotline)</p>
             </CardContent>
           </Card>
         </div>

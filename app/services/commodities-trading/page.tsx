@@ -7,6 +7,14 @@ import Image from "next/image"
 export default function CommoditiesTradingPage() {
   const subServices = [
     {
+      title: "Gold Trading",
+      description: "We are the best in Gold - Premier gold trading with unmatched expertise and global market access",
+      href: "/services/commodities-trading/gold",
+      icon: Zap,
+      image: "/commodity-metals.jpg",
+      featured: true,
+    },
+    {
       title: "Agricultural Commodities",
       description: "Tea, coffee, grains, cocoa, sugar, and specialty agricultural products",
       href: "/services/commodities-trading/agricultural",
@@ -15,7 +23,7 @@ export default function CommoditiesTradingPage() {
     },
     {
       title: "Metals & Minerals",
-      description: "Gold, copper, aluminum, cobalt, lithium, and rare earth elements",
+      description: "Copper, aluminum, cobalt, lithium, and rare earth elements",
       href: "/services/commodities-trading/metals",
       icon: Zap,
       image: "/commodity-metals.jpg",
@@ -83,10 +91,17 @@ export default function CommoditiesTradingPage() {
             global markets with secure, efficient transactions.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {subServices.map((service, index) => (
               <Link key={index} href={service.href}>
-                <Card className="card-hover h-full group overflow-hidden">
+                <Card className={`card-hover h-full group overflow-hidden ${service.featured ? 'ring-2 ring-accent bg-accent/5' : ''}`}>
+                  {service.featured && (
+                    <div className="absolute top-4 right-4 z-10">
+                      <span className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-semibold">
+                        Our Specialty
+                      </span>
+                    </div>
+                  )}
                   <div className="relative h-48 w-full overflow-hidden bg-muted">
                     <Image
                       src={service.image || "/placeholder.svg"}

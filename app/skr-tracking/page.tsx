@@ -66,10 +66,15 @@ export default function SKRTrackingPage() {
             </CardHeader>
             <CardContent>
               <form
-                onSubmit={(e) => {
+                onSubmit={async (e) => {
                   e.preventDefault()
-                  // Tracking functionality would be handled by backend
-                  alert("Tracking functionality will be connected to backend system")
+                  if (!trackingNumber.trim()) {
+                    alert("Please enter a tracking number")
+                    return
+                  }
+                  
+                  // For now, show a message that tracking is being implemented
+                  alert(`Tracking number ${trackingNumber} is being processed. This feature will be connected to our backend system soon.`)
                 }}
                 className="space-y-4"
               >

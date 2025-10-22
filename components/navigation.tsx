@@ -18,6 +18,7 @@ export function Navigation() {
   const services = [
     { name: "All Services", href: "/services" },
     { name: "Trade Finance & Capital Solutions", href: "/services/trade-finance" },
+    { name: "Gold Trading (Our Specialty)", href: "/services/commodities-trading/gold" },
     { name: "Commodities Trading & Brokerage", href: "/services/commodities-trading" },
     { name: "Logistics & Supply Chain", href: "/services/logistics" },
     { name: "Insurance & Risk Advisory", href: "/services/insurance" },

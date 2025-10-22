@@ -26,10 +26,40 @@ export function ServiceOnboardingForm({ serviceName, serviceDescription }: Servi
     e.preventDefault()
     setIsLoading(true)
 
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    const formData = new FormData(e.currentTarget)
+    const data = {
+      firstName: formData.get('firstName') as string,
+      lastName: formData.get('lastName') as string,
+      email: formData.get('email') as string,
+      phone: formData.get('phone') as string,
+      company: formData.get('company') as string,
+      country: selectedCountry,
+      serviceName,
+      requirements: formData.get('requirements') as string,
+    }
 
-    setIsLoading(false)
-    setIsSubmitted(true)
+    try {
+      const response = await fetch('/api/service-quote', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+
+      const result = await response.json()
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to submit quote request')
+      }
+
+      setIsSubmitted(true)
+    } catch (error) {
+      console.error('Quote request submission error:', error)
+      alert('Failed to submit quote request. Please try again or contact us directly.')
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   if (isSubmitted) {
