@@ -271,8 +271,8 @@ export default function TermsOfServicePage() {
                   <p className="font-semibold text-foreground">G1 Holdings & Security Limited</p>
                   <p>Legal Department</p>
                   <p>Email: info@g1groupofcompanies.com</p>
-                  <p>Phone: +254 789 764 967</p>
-                  <p>Address: Villa 46, No 25, Mwananchi Road, Syokimau, Nairobi, Kenya</p>
+                  <p>Phone: +32 465 93 22 50 | +254 789 764 967 | +243 861 005 766</p>
+                  <p>Address: Villa 46, Airport Rd, Nairobi, Kenya</p>
                 </div>
               </div>
             </div>

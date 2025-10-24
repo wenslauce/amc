@@ -101,7 +101,7 @@ export async function POST(request: NextRequest) {
           
           <div style="background-color: #1e3a8a; color: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3 style="margin-top: 0;">Need Immediate Assistance?</h3>
-            <p style="margin: 5px 0;"><strong>Phone:</strong> +254 789 764 967</p>
+            <p style="margin: 5px 0;"><strong>Phone:</strong> +32 465 93 22 50 | +254 789 764 967 | +243 861 005 766</p>
             <p style="margin: 5px 0;"><strong>Emergency Hotline:</strong> +243 861 005 766 (24/7)</p>
             <p style="margin: 5px 0;"><strong>Email:</strong> info@g1groupofcompanies.com</p>
           </div>

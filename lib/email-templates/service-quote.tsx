@@ -169,7 +169,7 @@ export function ServiceQuoteConfirmationEmail({ data }: { data: ServiceQuoteData
             <strong>24/7 Emergency Hotline:</strong> +243 861 005 766
           </p>
           <p style={{ margin: '5px 0', fontSize: '14px', color: '#92400e' }}>
-            <strong>Business Hours:</strong> +254 789 764 967 (Mon-Fri: 8:00 AM - 6:00 PM EAT)
+            <strong>Business Hours:</strong> +32 465 93 22 50 | +254 789 764 967 | +243 861 005 766 (Mon-Fri: 8:00 AM - 6:00 PM EAT)
           </p>
         </div>
 

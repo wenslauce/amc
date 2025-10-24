@@ -101,12 +101,12 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="mt-0.5 flex-shrink-0 text-accent" />
                 <span className="text-primary-foreground/80">
-                  Villa 46, No 25, Mwananchi Road, Syokimau, Nairobi, Kenya
+                  Villa 46, Airport Rd, Nairobi, Kenya
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="flex-shrink-0 text-accent" />
-                <span className="text-primary-foreground/80">+254 789 764 967</span>
+                <span className="text-primary-foreground/80">+32 465 93 22 50 | +254 789 764 967 | +243 861 005 766</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="flex-shrink-0 text-accent" />
