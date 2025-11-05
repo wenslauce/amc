@@ -30,7 +30,7 @@
 
 
   - Replace company references in app/page.tsx hero section
-  - Update company description from "G1 Group of Companies (G1 Holdings & Security Limited)" to "Adams Minerals and Consultancy"
+  - Update company description from "G1 Group of Companies (AMCs & Security Limited)" to "Adams Minerals and Consultancy"
   - _Requirements: 1.3_
 
 - [x] 5. Update about page content

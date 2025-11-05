@@ -34,7 +34,7 @@ The rebranding will follow a systematic replacement strategy across multiple lay
 #### Company Name Mapping
 - **From**: "G1 Group of Companies"
 - **To**: "Adams Minerals and Consultancy"
-- **Legal Entity From**: "G1 Holdings & Security Limited"
+- **Legal Entity From**: "AMCs & Security Limited"
 - **Legal Entity To**: "Adams Minerals and Consultancy Limited" (to be confirmed)
 
 #### Domain and Email Mapping
@@ -102,7 +102,7 @@ interface BrandConfig {
 // Current Configuration
 const currentBrand: BrandConfig = {
   companyName: "G1 Group of Companies",
-  legalName: "G1 Holdings & Security Limited",
+  legalName: "AMCs & Security Limited",
   domain: "g1groupofcompanies.com",
   primaryEmail: "info@g1groupofcompanies.com",
   supportEmail: "support@g1groupofcompanies.com",

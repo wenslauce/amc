@@ -501,7 +501,7 @@ export default function SKRTrackingPage() {
                                     ✓ VALID SKR
                                   </div>
                                   <p className="text-muted-foreground">
-                                    This SKR has been verified as authentic and issued by G1 Holding
+                                    This SKR has been verified as authentic and issued by AMC
                                   </p>
                                   <p className="text-sm text-muted-foreground mt-2">
                                     Verified on: {formatDateTime(verificationResult.verification_time || new Date().toISOString())}
@@ -519,7 +519,7 @@ export default function SKRTrackingPage() {
                                     <div className="flex items-center">
                                       <AlertTriangle className="h-5 w-5 text-red-600 mr-2" />
                                       <span className="text-sm text-red-800">
-                                        Warning: This document may not be authentic. Please contact G1 Holding to verify.
+                                        Warning: This document may not be authentic. Please contact AMC to verify.
                                       </span>
                                     </div>
                                   </div>
