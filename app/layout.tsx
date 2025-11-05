@@ -10,9 +10,9 @@ import { Suspense } from "react"
 import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
-  title: "G1 Group of Companies | Securing High-Value Trade Across Borders",
+  title: "Adams Minerals and Consultancy | Excellence in Minerals and Strategic Consultancy",
   description:
-    "End-to-end protection, movement, and facilitation for high-value assets. From minerals and consignments to insurance, security, and finance.",
+    "Comprehensive minerals trading and strategic consultancy services. Expert guidance in mineral resources, trade facilitation, and business consultancy solutions.",
   generator: "v0.app",
   robots: {
     index: false,
@@ -23,17 +23,17 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "G1 Group of Companies | Securing High-Value Trade Across Borders",
+    title: "Adams Minerals and Consultancy | Excellence in Minerals and Strategic Consultancy",
     description:
-      "End-to-end protection, movement, and facilitation for high-value assets. From minerals and consignments to insurance, security, and finance.",
-    url: "https://g1groupofcompanies.com",
-    siteName: "G1 Group of Companies",
+      "Comprehensive minerals trading and strategic consultancy services. Expert guidance in mineral resources, trade facilitation, and business consultancy solutions.",
+    url: "https://adamsmineralsconsultancy.com",
+    siteName: "Adams Minerals and Consultancy",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "G1 Group of Companies - Securing High-Value Trade Across Borders",
+        alt: "Adams Minerals and Consultancy - Excellence in Minerals and Strategic Consultancy",
       },
     ],
     locale: "en_US",
@@ -41,26 +41,26 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "G1 Group of Companies | Securing High-Value Trade Across Borders",
+    title: "Adams Minerals and Consultancy | Excellence in Minerals and Strategic Consultancy",
     description:
-      "End-to-end protection, movement, and facilitation for high-value assets. From minerals and consignments to insurance, security, and finance.",
+      "Comprehensive minerals trading and strategic consultancy services. Expert guidance in mineral resources, trade facilitation, and business consultancy solutions.",
     images: ["/og-image.png"],
   },
   keywords: [
-    "trade finance",
-    "commodities trading",
-    "logistics",
-    "insurance",
-    "risk management",
-    "cross-border trade",
-    "high-value assets",
-    "G1 Group",
-    "Nairobi Kenya",
-    "global trade",
+    "minerals trading",
+    "strategic consultancy",
+    "mineral resources",
+    "business consultancy",
+    "trade facilitation",
+    "mining consultancy",
+    "Adams Minerals",
+    "AMC",
+    "mineral expertise",
+    "consultancy services",
   ],
-  authors: [{ name: "G1 Holdings & Security Limited" }],
-  creator: "G1 Holdings & Security Limited",
-  publisher: "G1 Holdings & Security Limited",
+  authors: [{ name: "Adams Minerals and Consultancy Limited" }],
+  creator: "Adams Minerals and Consultancy Limited",
+  publisher: "Adams Minerals and Consultancy Limited",
   formatDetection: {
     email: false,
     address: false,
@@ -76,7 +76,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="preload" href="/video/g1loop.mp4" as="video" type="video/mp4" />
+        <link rel="preload" href="/video/amcloop.mp4" as="video" type="video/mp4" />
       </head>
       <body className="font-sans">
         <ErrorBoundary>

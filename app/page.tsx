@@ -12,40 +12,52 @@ import { SecurityHighlightsSection } from "@/components/security-highlights-sect
 export default function HomePage() {
   const services = [
     {
-      image: "/service-trade-finance.jpg",
-      title: "Trade Finance & Capital Solutions",
-      description: "Corporate loans and structured finance for high-value transactions across borders.",
-      href: "/services/trade-finance",
+      image: "/service-commodities-trading.jpg",
+      title: "Minerals Trading",
+      description: "Expert trading in precious metals, industrial minerals, and rare earth elements with global market access.",
+      href: "/services/commodities-trading",
     },
     {
-      image: "/service-commodities-trading.jpg",
-      title: "Commodities Trading & Brokerage",
-      description: "We are the best in Gold trading, plus agricultural commodities, metals, energy products, and oil & gas.",
-      href: "/services/commodities-trading",
+      image: "/service-consultancy.jpg",
+      title: "Strategic Consultancy",
+      description: "Comprehensive business advisory services, market analysis, and strategic planning for mineral sector operations.",
+      href: "/services/consultancy",
+    },
+    {
+      image: "/service-trade-finance.jpg",
+      title: "Trade Facilitation & Finance",
+      description: "End-to-end support for mineral trade transactions, documentation, and financial solutions.",
+      href: "/services/trade-finance",
     },
     {
       image: "/service-logistics.jpg",
       title: "Logistics & Supply Chain",
-      description: "Freight coordination, customs clearance, and secure shipment management.",
+      description: "Secure transportation and supply chain management for mineral commodities and high-value assets.",
       href: "/services/logistics",
     },
     {
       image: "/service-insurance.jpg",
-      title: "Insurance & Risk Advisory",
-      description: "Marine, cargo, and corporate insurance with comprehensive risk protection.",
+      title: "Risk Management & Insurance",
+      description: "Comprehensive risk assessment and insurance solutions for mineral trading and operations.",
       href: "/services/insurance",
     },
     {
-      image: "/service-consultancy.jpg",
-      title: "Business Consultancy",
-      description: "SME advisory, compliance training, and operational structuring.",
-      href: "/services/consultancy",
+      image: "/service-wealth-management.jpg",
+      title: "Investment Advisory",
+      description: "Strategic investment guidance and wealth management services for mineral sector investments.",
+      href: "/services/wealth-management",
     },
     {
-      image: "/service-wealth-management.jpg",
-      title: "Investment & Wealth Management",
-      description: "High-net-worth advisory, asset preservation, and investment structuring.",
-      href: "/services/wealth-management",
+      image: "/service-crypto-desk.jpg",
+      title: "Crypto Desk & Digital Payments",
+      description: "Secure cryptocurrency transactions and digital payment solutions for international mineral trading operations.",
+      href: "/services/crypto-desk",
+    },
+    {
+      image: "/service-compliance.jpg",
+      title: "Regulatory Compliance & Legal Advisory",
+      description: "Expert guidance on mining regulations, trade compliance, and legal advisory for mineral sector operations.",
+      href: "/services/compliance",
     },
   ]
 
@@ -69,22 +81,22 @@ export default function HomePage() {
           className="absolute inset-0 w-full h-full object-cover opacity-30"
           poster="/global-trade-shipping-containers-port-aerial-view.jpg"
         >
-          <source src="/video/g1loop.mp4" type="video/mp4" />
+          <source src="/video/amcloop.mp4" type="video/mp4" />
           {/* Fallback for browsers that don't support video */}
           Your browser does not support the video tag.
         </video>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-balance">
-            Securing High-Value Trade
+            Excellence in Minerals
             <br />
-            Across Borders
+            and Strategic Consultancy
           </h1>
           <p className="text-lg sm:text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto text-pretty leading-relaxed">
-            End-to-end protection, movement, and facilitation for high-value assets. From minerals and consignments to
-            insurance, security, and finance.
+            Comprehensive minerals trading and strategic consultancy services. Expert guidance in mineral resources, 
+            trade facilitation, and business consultancy solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" asChild>
+            <Button size="lg" asChild className="bg-[#ef393b] text-white hover:bg-[#d73035]">
               <Link href="/services">
                 Explore Services <ArrowRight className="ml-2" size={20} />
               </Link>
@@ -123,15 +135,15 @@ export default function HomePage() {
                 Your Strategic Partner in Global Trade
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                G1 Group of Companies (G1 Holdings & Security Limited) is a fully integrated trade facilitation and risk
-                management partner headquartered in Nairobi, Kenya.
+                Adams Minerals and Consultancy is a specialized minerals trading and strategic consultancy firm 
+                headquartered in Nairobi, Kenya.
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                We support high-value transactions across Africa, the Middle East, Asia, Europe, and the Americas
-                through a unified service model that combines finance, commodities, logistics, insurance, energy, and
-                advisory into one coordinated framework.
+                We provide expert minerals trading and strategic consultancy services across Africa, the Middle East, 
+                Asia, Europe, and the Americas through our specialized knowledge in mineral resources, market analysis, 
+                and comprehensive business advisory services.
               </p>
-              <Button asChild>
+              <Button asChild className="bg-[#ef393b] text-white hover:bg-[#d73035]">
                 <Link href="/about">
                   Learn More About Us <ArrowRight className="ml-2" size={20} />
                 </Link>
@@ -171,7 +183,7 @@ export default function HomePage() {
                   <CardContent className="p-6">
                     <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
                     <p className="text-muted-foreground leading-relaxed mb-4">{service.description}</p>
-                    <div className="flex items-center text-primary font-medium">
+                    <div className="flex items-center text-[#ef393b] font-medium">
                       Learn More <ArrowRight className="ml-2" size={16} />
                     </div>
                   </CardContent>
@@ -180,7 +192,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Button size="lg" asChild className="btn-hover-lift">
+            <Button size="lg" asChild className="btn-hover-lift bg-[#ef393b] text-white hover:bg-[#d73035]">
               <Link href="/services">
                 View All Services <ArrowRight className="ml-2" size={20} />
               </Link>
@@ -197,40 +209,42 @@ export default function HomePage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-balance">Why Choose G1 Group</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-balance">Why Choose Adams Minerals and Consultancy</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">Unified Cross-Border Trade Partner</h3>
+                <h3 className="text-2xl font-semibold mb-4">Specialized Minerals Expertise</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Finance, Commodities, Logistics, Insurance and Energy Solutions delivered under one coordinated
-                  structure.
+                  Deep knowledge in mineral markets, trading strategies, and resource evaluation delivered through 
+                  comprehensive consultancy services.
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">High-Risk & High-Value Expertise</h3>
+                <h3 className="text-2xl font-semibold mb-4">Strategic Business Advisory</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Specialized in SKR consignments, Oil & Gas shipments, Structured Commodity Finance and Armored
-                  Movement.
+                  Expert guidance in business strategy, market analysis, and operational optimization for mineral 
+                  sector companies.
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">International Network, Local Execution</h3>
+                <h3 className="text-2xl font-semibold mb-4">Global Market Access</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Active partnerships across UAE, South Africa, China, Turkey, UK, USA, West & Central Africa.
+                  International network and partnerships across key mineral markets in Africa, Middle East, Asia, 
+                  Europe, and the Americas.
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">Compliance-Driven & Governance Aligned</h3>
+                <h3 className="text-2xl font-semibold mb-4">Regulatory Compliance Excellence</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Fully aligned with AML, KYC, PSRA, IRA, Mining & Energy Regulations.
+                  Full compliance with mining regulations, trade standards, and international mineral trading 
+                  requirements.
                 </p>
               </CardContent>
             </Card>
@@ -247,10 +261,10 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-balance">Ready to Secure Your Next Transaction?</h2>
           <p className="text-lg text-primary-foreground/90 mb-8 text-pretty leading-relaxed">
-            Partner with G1 Group for comprehensive trade facilitation and risk management solutions tailored to your
-            needs.
+            Partner with Adams Minerals and Consultancy for expert minerals trading and strategic consultancy services 
+            tailored to your needs.
           </p>
-          <Button size="lg" variant="secondary" asChild className="btn-hover-lift">
+          <Button size="lg" asChild className="btn-hover-lift bg-[#ef393b] text-white hover:bg-[#d73035]">
             <Link href="/contact">
               Get Started Today <ArrowRight className="ml-2" size={20} />
             </Link>

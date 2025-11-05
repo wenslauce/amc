@@ -45,8 +45,8 @@ export function HowItWorksSection() {
               <div key={index} className="relative">
                 <Card className="card-hover h-full">
                   <CardContent className="p-6">
-                    <div className="text-4xl font-bold text-primary/20 mb-4">{step.number}</div>
-                    <Icon className="w-10 h-10 text-primary mb-4" />
+                    <div className="text-4xl font-bold text-[#ef393b]/20 mb-4">{step.number}</div>
+                    <Icon className="w-10 h-10 text-[#ef393b] mb-4" />
                     <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
                   </CardContent>

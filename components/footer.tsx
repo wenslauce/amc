@@ -8,10 +8,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {/* Company Info Card */}
           <div className="glass-card p-6 rounded-2xl">
-            <h3 className="text-xl font-bold mb-4">G1 Group of Companies</h3>
+            <h3 className="text-xl font-bold mb-4">Adams Minerals and Consultancy</h3>
             <p className="text-sm text-primary-foreground/80 leading-relaxed mb-6">
-              Securing high-value trade across borders with integrated finance, commodities, logistics, and risk
-              management solutions.
+              Excellence in minerals trading and strategic consultancy services. Expert guidance in mineral resources, 
+              trade facilitation, and comprehensive business consultancy solutions.
             </p>
             {/* Social Media Icons */}
             <div className="flex gap-3">
@@ -70,14 +70,7 @@ export function Footer() {
                   SKR & Tracking
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/partners"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors flex items-center gap-2"
-                >
-                  Partners
-                </Link>
-              </li>
+
             </ul>
           </div>
 
@@ -85,12 +78,12 @@ export function Footer() {
           <div className="glass-card p-6 rounded-2xl">
             <h4 className="font-semibold mb-4">Our Services</h4>
             <ul className="space-y-3 text-sm">
-              <li className="text-primary-foreground/80">Trade Finance</li>
-              <li className="text-primary-foreground/80">Commodities Trading</li>
-              <li className="text-primary-foreground/80">Logistics & Security</li>
-              <li className="text-primary-foreground/80">Insurance & Risk Advisory</li>
-              <li className="text-primary-foreground/80">Business Consultancy</li>
-              <li className="text-primary-foreground/80">Wealth Management</li>
+              <li className="text-primary-foreground/80">Minerals Trading</li>
+              <li className="text-primary-foreground/80">Strategic Consultancy</li>
+              <li className="text-primary-foreground/80">Crypto Desk & Digital Payments</li>
+              <li className="text-primary-foreground/80">Trade Facilitation</li>
+              <li className="text-primary-foreground/80">Risk Management</li>
+              <li className="text-primary-foreground/80">Regulatory Compliance</li>
             </ul>
           </div>
 
@@ -99,18 +92,18 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Contact Us</h4>
             <ul className="space-y-4 text-sm mb-6">
               <li className="flex items-start gap-3">
-                <MapPin size={18} className="mt-0.5 flex-shrink-0 text-accent" />
+                <MapPin size={18} className="mt-0.5 flex-shrink-0 text-[#ef393b]" />
                 <span className="text-primary-foreground/80">
                   Villa 46, Airport Rd, Nairobi, Kenya
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone size={18} className="flex-shrink-0 text-accent" />
+                <Phone size={18} className="flex-shrink-0 text-[#ef393b]" />
                 <span className="text-primary-foreground/80">+32 465 93 22 50 | +254 789 764 967 | +243 861 005 766</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail size={18} className="flex-shrink-0 text-accent" />
-                <span className="text-primary-foreground/80">info@g1groupofcompanies.com</span>
+                <Mail size={18} className="flex-shrink-0 text-[#ef393b]" />
+                <span className="text-primary-foreground/80">info@adamsmineralsconsultancy.com</span>
               </li>
             </ul>
             <Link
@@ -124,18 +117,16 @@ export function Footer() {
 
         <div className="glass-card p-6 rounded-2xl mb-8">
           <div className="flex items-start gap-3">
-            <Info size={20} className="flex-shrink-0 text-accent mt-0.5" />
+            <Info size={20} className="flex-shrink-0 text-[#ef393b] mt-0.5" />
             <div>
               <h5 className="font-semibold mb-2">Legal Disclaimer</h5>
               <p className="text-sm text-primary-foreground/70 leading-relaxed">
-                G1 Holdings & Security Limited operates as a trade facilitation and brokerage firm with both owned
-                subsidiaries and strategic partnerships. While we own and operate certain companies within our group,
-                logistics, security, and insurance services may also be provided by licensed third-party operators
-                where appropriate. We arrange trade finance, commodities brokerage, and risk management services
-                through our owned entities and certified service providers. Asset security, regulatory compliance,
-                and operational safety are managed through our integrated network of owned companies and trusted
-                partners. G1 Group provides comprehensive solutions through both direct operations and strategic
-                partnerships to ensure optimal service delivery.
+                Adams Minerals and Consultancy Limited operates as a specialized minerals trading and strategic 
+                consultancy firm. We provide expert guidance in mineral resource assessment, trade facilitation, 
+                and comprehensive business consultancy services. Our expertise spans mineral market analysis, 
+                resource evaluation, and strategic business advisory services. We maintain the highest standards 
+                of professional integrity and regulatory compliance in all our operations, ensuring optimal 
+                service delivery through our specialized knowledge and strategic partnerships.
               </p>
             </div>
           </div>
@@ -143,7 +134,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-primary-foreground/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/70">
-            <p>&copy; {new Date().getFullYear()} G1 Holdings & Security Limited. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Adams Minerals and Consultancy Limited. All rights reserved.</p>
             <div className="flex flex-wrap justify-center gap-6">
               <Link href="/case-studies" className="hover:text-primary-foreground transition-colors">
                 Case Studies

@@ -7,23 +7,23 @@ export default function AboutPage() {
   const values = [
     {
       icon: Target,
-      title: "Precision & Accountability",
-      description: "Every transaction handled with meticulous attention to detail and full accountability.",
+      title: "Precision & Expertise",
+      description: "Every mineral assessment and consultancy engagement handled with meticulous attention to detail and expert knowledge.",
     },
     {
       icon: Eye,
-      title: "Transparency & Trust",
-      description: "Building lasting relationships through honest communication and reliable service delivery.",
+      title: "Transparency & Integrity",
+      description: "Building lasting relationships through honest communication, ethical practices, and reliable service delivery.",
     },
     {
       icon: Award,
       title: "Excellence & Innovation",
-      description: "Continuously improving our services to meet evolving market demands and client needs.",
+      description: "Continuously advancing our mineral sector expertise to meet evolving market demands and client needs.",
     },
     {
       icon: Globe2,
-      title: "Global Reach, Local Expertise",
-      description: "International network combined with deep understanding of regional markets and regulations.",
+      title: "Global Markets, Local Knowledge",
+      description: "International mineral market access combined with deep understanding of regional mining regulations and practices.",
     },
   ]
 
@@ -33,10 +33,10 @@ export default function AboutPage() {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">About G1 Group of Companies</h1>
+            <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">About Adams Minerals and Consultancy</h1>
             <p className="text-xl text-primary-foreground/90 leading-relaxed">
-              Your strategic partner in cross-border trade facilitation and risk management, operating across five
-              continents.
+              Your specialized partner in minerals trading and strategic consultancy services, delivering excellence 
+              across global markets.
             </p>
           </div>
         </div>
@@ -50,26 +50,25 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold mb-6">Who We Are</h2>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  G1 Group of Companies (legal: G1 Holdings & Security Limited) is a fully integrated trade facilitation
-                  and risk management partner headquartered in Nairobi, Kenya.
+                  Adams Minerals and Consultancy Limited is a specialized minerals trading and strategic consultancy 
+                  firm headquartered in Nairobi, Kenya.
                 </p>
                 <p>
-                  We support high-value transactions across Africa, the Middle East, Asia, Europe, and the Americas
-                  through a unified service model that combines finance, commodities, logistics, insurance, energy, and
-                  advisory into one coordinated framework.
+                  We provide expert minerals trading and strategic consultancy services across Africa, the Middle East, 
+                  Asia, Europe, and the Americas through our deep expertise in mineral resources, market analysis, 
+                  and comprehensive business advisory services.
                 </p>
                 <p>
-                  Our mandate is to enable safe, secure, and efficient cross-border movement of assets, capital, and
-                  infrastructure. From trade finance and corporate lending to commodity brokerage, freight coordination,
-                  SKR-secured logistics, insurance placement, business advisory, investment structuring, and energy
-                  project development.
+                  Our mandate is to deliver excellence in minerals trading, resource assessment, and strategic business 
+                  consultancy. From mineral market analysis and trade facilitation to resource evaluation, business 
+                  advisory, strategic planning, and operational optimization for companies in the mineral sector.
                 </p>
               </div>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <img
                 src="/modern-office-building-corporate-headquarters.jpg"
-                alt="G1 Group Headquarters"
+                alt="Adams Minerals and Consultancy Headquarters"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -83,43 +82,44 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">What Sets Us Apart</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Unlike traditional service providers, G1 operates as a strategic partner rather than a standalone vendor
+              Unlike traditional service providers, Adams Minerals and Consultancy operates as a strategic partner 
+              with deep mineral sector expertise
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">Unified Service Model</h3>
+                <h3 className="text-2xl font-semibold mb-4">Specialized Minerals Expertise</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  We bridge the gaps between financiers, traders, insurers, logistics providers, energy investors, and
-                  regulators, allowing our clients to transact with confidence under a single point of accountability.
+                  Deep knowledge in mineral markets, resource evaluation, and trading strategies, providing clients 
+                  with expert guidance and comprehensive consultancy services in the mineral sector.
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">End-to-End Solutions</h3>
+                <h3 className="text-2xl font-semibold mb-4">Comprehensive Consultancy</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Complete solutions from deal origination to settlement, ensuring seamless execution across all phases
-                  of your transaction.
+                  Complete strategic advisory services from market analysis to business planning, ensuring optimal 
+                  decision-making across all phases of mineral sector operations.
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">High-Value Specialization</h3>
+                <h3 className="text-2xl font-semibold mb-4">Market Intelligence</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Expertise in SKR consignments, Oil & Gas shipments, Structured Commodity Finance, and Armored Movement
-                  for high-risk, high-value transactions.
+                  Advanced market analysis, price forecasting, and trend identification for precious metals, industrial 
+                  minerals, and rare earth elements across global markets.
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">Compliance & Security</h3>
+                <h3 className="text-2xl font-semibold mb-4">Regulatory Excellence</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Fully aligned with AML, KYC, PSRA, IRA, Mining & Energy Regulations. Every transaction handled under
-                  strict discretion and verified documentation.
+                  Full compliance with mining regulations, trade standards, and international mineral trading requirements. 
+                  Every engagement handled with strict professional standards and verified documentation.
                 </p>
               </CardContent>
             </Card>
@@ -137,7 +137,7 @@ export default function AboutPage() {
             {values.map((value, index) => (
               <Card key={index} className="text-center">
                 <CardContent className="p-6">
-                  <value.icon className="text-primary mx-auto mb-4" size={48} strokeWidth={1.5} />
+                  <value.icon className="text-[#ef393b] mx-auto mb-4" size={48} strokeWidth={1.5} />
                   <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{value.description}</p>
                 </CardContent>
@@ -198,16 +198,16 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Work With Us?</h2>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-            Discover how G1 Group can facilitate your next high-value transaction with our comprehensive suite of
-            services.
+            Discover how Adams Minerals and Consultancy can support your mineral sector operations with our specialized 
+            expertise and comprehensive consultancy services.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" asChild>
+            <Button size="lg" asChild className="bg-[#ef393b] text-white hover:bg-[#d73035]">
               <Link href="/services">
                 Explore Our Services <ArrowRight className="ml-2" size={20} />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild>
+            <Button size="lg" variant="outline" asChild className="border-[#ef393b] text-[#ef393b] hover:bg-[#ef393b] hover:text-white">
               <Link href="/contact">Contact Us</Link>
             </Button>
           </div>

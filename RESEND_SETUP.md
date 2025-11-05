@@ -1,11 +1,11 @@
 # Resend Email Configuration Setup
 
-This guide explains how to configure Resend email functionality for the G1 Group website.
+This guide explains how to configure Resend email functionality for the Adams Minerals and Consultancy website.
 
 ## Prerequisites
 
 1. **Resend Account**: Sign up at [resend.com](https://resend.com)
-2. **Domain Verification**: Verify your domain `g1groupofcompanies.com` in Resend
+2. **Domain Verification**: Verify your domain `adamsmineralsconsultancy.com` in Resend
 3. **API Key**: Generate an API key from your Resend dashboard
 
 ## Environment Variables
@@ -15,15 +15,15 @@ Create a `.env.local` file in the root directory with the following variables:
 ```env
 # Resend Email Configuration
 RESEND_API_KEY=re_your_api_key_here
-FROM_EMAIL=noreply@g1groupofcompanies.com
-TO_EMAIL=info@g1groupofcompanies.com
+FROM_EMAIL=noreply@adamsmineralsconsultancy.com
+TO_EMAIL=info@adamsmineralsconsultancy.com
 
 # Optional: Additional email addresses for different departments
-SUPPORT_EMAIL=support@g1groupofcompanies.com
-SALES_EMAIL=sales@g1groupofcompanies.com
+SUPPORT_EMAIL=support@adamsmineralsconsultancy.com
+SALES_EMAIL=sales@adamsmineralsconsultancy.com
 
 # Next.js Configuration
-NEXT_PUBLIC_SITE_URL=https://g1groupofcompanies.com
+NEXT_PUBLIC_SITE_URL=https://adamsmineralsconsultancy.com
 ```
 
 ## Email Templates
@@ -69,7 +69,7 @@ The system includes two types of email templates:
 - ✅ Next steps guidance
 - ✅ Emergency contact details
 
-### For G1 Team (Notification Emails)
+### For Adams Minerals and Consultancy Team (Notification Emails)
 - ✅ Complete form data
 - ✅ Priority indicators
 - ✅ Action requirements

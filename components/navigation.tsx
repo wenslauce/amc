@@ -28,7 +28,6 @@ export function Navigation() {
 
   const additionalItems = [
     { name: "SKR & Tracking", href: "/skr-tracking" },
-    { name: "Partners", href: "/partners" },
   ]
 
   return (
@@ -39,12 +38,12 @@ export function Navigation() {
           <Link href="/" className="flex items-center gap-3">
             <Image 
               src="/logo.png" 
-              alt="G1 Group of Companies" 
+              alt="Adams Minerals and Consultancy" 
               width={48} 
               height={48}
               className="object-contain"
             />
-            <div className="hidden sm:block text-sm font-medium text-foreground">G1 Group of Companies</div>
+            <div className="hidden sm:block text-sm font-medium text-foreground">Adams Minerals and Consultancy</div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -88,7 +87,7 @@ export function Navigation() {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button asChild className="btn-hover-lift">
+            <Button asChild className="btn-hover-lift bg-[#ef393b] text-white hover:bg-[#d73035]">
               <Link href="/contact">Contact Us</Link>
             </Button>
           </div>
@@ -138,7 +137,7 @@ export function Navigation() {
               </Link>
             ))}
             <div className="pt-2">
-              <Button asChild className="w-full btn-hover-lift">
+              <Button asChild className="w-full btn-hover-lift bg-[#ef393b] text-white hover:bg-[#d73035]">
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>

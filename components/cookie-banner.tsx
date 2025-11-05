@@ -43,7 +43,7 @@ export function CookieBanner() {
                 We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By
                 clicking "Accept All", you consent to our use of cookies. You can manage your preferences or learn more
                 in our{" "}
-                <Link href="/privacy" className="text-accent hover:underline font-medium">
+                <Link href="/privacy" className="text-[#ef393b] hover:underline font-medium">
                   Privacy Policy
                 </Link>
                 .

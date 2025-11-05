@@ -40,7 +40,7 @@ export function TrustCredibilitySection() {
             return (
               <Card key={index} className="card-hover">
                 <CardContent className="p-6">
-                  <Icon className="w-12 h-12 text-primary mb-4" />
+                  <Icon className="w-12 h-12 text-[#ef393b] mb-4" />
                   <h3 className="text-lg font-semibold mb-2">{credential.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{credential.description}</p>
                 </CardContent>

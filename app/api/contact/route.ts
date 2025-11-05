@@ -43,7 +43,7 @@ export async function POST(request: NextRequest) {
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
         <div style="background-color: #1e3a8a; color: white; padding: 20px; border-radius: 8px 8px 0 0;">
           <h1 style="margin: 0; font-size: 24px;">New Contact Form Submission</h1>
-          <p style="margin: 10px 0 0 0; opacity: 0.9;">G1 Group of Companies</p>
+          <p style="margin: 10px 0 0 0; opacity: 0.9;">Adams Minerals and Consultancy</p>
         </div>
         
         <div style="background-color: #f8fafc; padding: 30px; border-radius: 0 0 8px 8px; border: 1px solid #e2e8f0;">
@@ -66,7 +66,7 @@ export async function POST(request: NextRequest) {
           </div>
           
           <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e2e8f0; color: #64748b; font-size: 14px;">
-            <p>This message was sent from the G1 Group of Companies contact form.</p>
+            <p>This message was sent from the Adams Minerals and Consultancy contact form.</p>
             <p>Please respond to the client directly at: <a href="mailto:${formData.email}" style="color: #1e3a8a;">${formData.email}</a></p>
           </div>
         </div>
@@ -77,7 +77,7 @@ export async function POST(request: NextRequest) {
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
         <div style="background-color: #1e3a8a; color: white; padding: 20px; border-radius: 8px 8px 0 0;">
           <h1 style="margin: 0; font-size: 24px;">Thank You for Contacting Us</h1>
-          <p style="margin: 10px 0 0 0; opacity: 0.9;">G1 Group of Companies</p>
+          <p style="margin: 10px 0 0 0; opacity: 0.9;">Adams Minerals and Consultancy</p>
         </div>
         
         <div style="background-color: #f8fafc; padding: 30px; border-radius: 0 0 8px 8px; border: 1px solid #e2e8f0;">
@@ -86,7 +86,7 @@ export async function POST(request: NextRequest) {
           </p>
           
           <p style="font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
-            Thank you for reaching out to G1 Group of Companies. We have received your inquiry regarding <strong>${formData.service}</strong> and will respond within 24 hours.
+            Thank you for reaching out to Adams Minerals and Consultancy. We have received your inquiry regarding <strong>${formData.service}</strong> and will respond within 24 hours.
           </p>
           
           <div style="background-color: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
@@ -95,37 +95,37 @@ export async function POST(request: NextRequest) {
           </div>
           
           <p style="font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
-            Our team of experts will review your requirements and provide you with a comprehensive response tailored to your needs.
+            Our team of mineral and consultancy experts will review your requirements and provide you with a comprehensive response tailored to your needs.
           </p>
           
           <div style="background-color: #1e3a8a; color: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3 style="margin-top: 0;">Need Immediate Assistance?</h3>
             <p style="margin: 5px 0;"><strong>Phone:</strong> +32 465 93 22 50 | +254 789 764 967 | +243 861 005 766</p>
             <p style="margin: 5px 0;"><strong>Emergency Hotline:</strong> +243 861 005 766 (24/7)</p>
-            <p style="margin: 5px 0;"><strong>Email:</strong> info@g1groupofcompanies.com</p>
+            <p style="margin: 5px 0;"><strong>Email:</strong> info@adamsmineralsconsultancy.com</p>
           </div>
           
           <p style="font-size: 16px; line-height: 1.6; margin-bottom: 0;">
             Best regards,<br>
-            <strong>G1 Group of Companies Team</strong>
+            <strong>Adams Minerals and Consultancy Team</strong>
           </p>
         </div>
       </div>
     `
 
-    // Send email to G1 Group team
+    // Send email to Adams Minerals and Consultancy team
     const teamEmailResult = await resend.emails.send({
-      from: process.env.FROM_EMAIL || 'noreply@g1groupofcompanies.com',
-      to: [process.env.TO_EMAIL || 'info@g1groupofcompanies.com'],
+      from: process.env.FROM_EMAIL || 'noreply@adamsmineralsconsultancy.com',
+      to: [process.env.TO_EMAIL || 'info@adamsmineralsconsultancy.com'],
       subject: `New Contact Form Submission - ${service}`,
       html: teamEmailHtml,
     })
 
     // Send confirmation email to client
     const confirmationEmailResult = await resend.emails.send({
-      from: process.env.FROM_EMAIL || 'noreply@g1groupofcompanies.com',
+      from: process.env.FROM_EMAIL || 'noreply@adamsmineralsconsultancy.com',
       to: [email],
-      subject: 'Thank You for Contacting G1 Group of Companies',
+      subject: 'Thank You for Contacting Adams Minerals and Consultancy',
       html: confirmationEmailHtml,
     })
 

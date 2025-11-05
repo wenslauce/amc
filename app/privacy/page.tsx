@@ -7,7 +7,7 @@ export default function PrivacyPolicyPage() {
       <section className="relative py-20 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-4">
-            <Shield className="w-8 h-8 text-accent" />
+            <Shield className="w-8 h-8 text-[#ef393b]" />
             <h1 className="text-4xl md:text-5xl font-bold">Privacy Policy</h1>
           </div>
           <p className="text-lg text-primary-foreground/80">
@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
             {/* Introduction */}
             <div className="mb-12">
               <p className="text-lg leading-relaxed text-muted-foreground">
-                G1 Holdings & Security Limited ("G1 Group," "we," "us," or "our") is committed to protecting your
+                Adams Minerals and Consultancy Limited ("Adams Minerals and Consultancy," "we," "us," or "our") is committed to protecting your
                 privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when
                 you visit our website or use our services.
               </p>
@@ -32,7 +32,7 @@ export default function PrivacyPolicyPage() {
             {/* Information We Collect */}
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-4">
-                <Database className="w-6 h-6 text-accent" />
+                <Database className="w-6 h-6 text-[#ef393b]" />
                 <h2 className="text-2xl font-bold text-foreground">1. Information We Collect</h2>
               </div>
               <div className="space-y-4 text-muted-foreground">
@@ -60,13 +60,13 @@ export default function PrivacyPolicyPage() {
             {/* How We Use Your Information */}
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-4">
-                <FileText className="w-6 h-6 text-accent" />
+                <FileText className="w-6 h-6 text-[#ef393b]" />
                 <h2 className="text-2xl font-bold text-foreground">2. How We Use Your Information</h2>
               </div>
               <div className="space-y-4 text-muted-foreground">
                 <p>We use the information we collect to:</p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Provide, operate, and maintain our trade facilitation and brokerage services</li>
+                  <li>Provide, operate, and maintain our minerals trading and consultancy services</li>
                   <li>Process transactions and manage client relationships</li>
                   <li>Communicate with you about services, updates, and business opportunities</li>
                   <li>Comply with legal obligations, including KYC and AML requirements</li>
@@ -80,18 +80,18 @@ export default function PrivacyPolicyPage() {
             {/* Information Sharing */}
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-4">
-                <UserCheck className="w-6 h-6 text-accent" />
+                <UserCheck className="w-6 h-6 text-[#ef393b]" />
                 <h2 className="text-2xl font-bold text-foreground">3. Information Sharing and Disclosure</h2>
               </div>
               <div className="space-y-4 text-muted-foreground">
                 <p>We may share your information with:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>
-                    <strong>Service Providers:</strong> Third-party logistics, insurance, and financial service
+                    <strong>Service Providers:</strong> Third-party mining, logistics, and financial service
                     providers who assist in delivering our services
                   </li>
                   <li>
-                    <strong>Business Partners:</strong> Authorized partners and subsidiaries within the G1 Group network
+                    <strong>Business Partners:</strong> Authorized partners and subsidiaries within the Adams Minerals and Consultancy network
                   </li>
                   <li>
                     <strong>Legal Authorities:</strong> Government agencies, regulators, and law enforcement when
@@ -114,7 +114,7 @@ export default function PrivacyPolicyPage() {
             {/* Data Security */}
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-4">
-                <Lock className="w-6 h-6 text-accent" />
+                <Lock className="w-6 h-6 text-[#ef393b]" />
                 <h2 className="text-2xl font-bold text-foreground">4. Data Security</h2>
               </div>
               <div className="space-y-4 text-muted-foreground">
@@ -140,7 +140,7 @@ export default function PrivacyPolicyPage() {
             {/* Your Rights */}
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-4">
-                <Eye className="w-6 h-6 text-accent" />
+                <Eye className="w-6 h-6 text-[#ef393b]" />
                 <h2 className="text-2xl font-bold text-foreground">5. Your Privacy Rights</h2>
               </div>
               <div className="space-y-4 text-muted-foreground">
@@ -170,7 +170,7 @@ export default function PrivacyPolicyPage() {
                   </li>
                 </ul>
                 <p className="mt-4">
-                  To exercise these rights, please contact us at privacy@g1group.com. We will respond to your request
+                  To exercise these rights, please contact us at privacy@adamsmineralsconsultancy.com. We will respond to your request
                   within 30 days.
                 </p>
               </div>
@@ -181,13 +181,13 @@ export default function PrivacyPolicyPage() {
               <h2 className="text-2xl font-bold text-foreground mb-4">6. International Data Transfers</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  As a global trade facilitation company, we may transfer your information to countries outside your
+                  As a global minerals and consultancy company, we may transfer your information to countries outside your
                   jurisdiction. We ensure appropriate safeguards are in place, including:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Standard contractual clauses approved by relevant authorities</li>
                   <li>Adequacy decisions recognizing equivalent data protection standards</li>
-                  <li>Binding corporate rules within the G1 Group network</li>
+                  <li>Binding corporate rules within the Adams Minerals and Consultancy network</li>
                 </ul>
               </div>
             </div>
@@ -254,9 +254,9 @@ export default function PrivacyPolicyPage() {
                   If you have questions or concerns about this Privacy Policy or our data practices, please contact:
                 </p>
                 <div className="bg-muted p-6 rounded-lg mt-4">
-                  <p className="font-semibold text-foreground">G1 Holdings & Security Limited</p>
+                  <p className="font-semibold text-foreground">Adams Minerals and Consultancy Limited</p>
                   <p>Data Protection Officer</p>
-                  <p>Email: info@g1groupofcompanies.com</p>
+                  <p>Email: info@adamsmineralsconsultancy.com</p>
                   <p>Phone: +32 465 93 22 50 | +254 789 764 967 | +243 861 005 766</p>
                   <p>Address: Villa 46, Airport Rd, Nairobi, Kenya</p>
                 </div>

@@ -7,7 +7,7 @@ export default function TermsOfServicePage() {
       <section className="relative py-20 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-4">
-            <Scale className="w-8 h-8 text-accent" />
+            <Scale className="w-8 h-8 text-[#ef393b]" />
             <h1 className="text-4xl md:text-5xl font-bold">Terms of Service</h1>
           </div>
           <p className="text-lg text-primary-foreground/80">
@@ -23,8 +23,8 @@ export default function TermsOfServicePage() {
             {/* Introduction */}
             <div className="mb-12">
               <p className="text-lg leading-relaxed text-muted-foreground">
-                These Terms of Service ("Terms") govern your access to and use of the services provided by G1 Holdings &
-                Security Limited ("G1 Group," "we," "us," or "our"). By accessing or using our services, you agree to be
+                These Terms of Service ("Terms") govern your access to and use of the services provided by Adams Minerals 
+                and Consultancy Limited ("Adams Minerals and Consultancy," "we," "us," or "our"). By accessing or using our services, you agree to be
                 bound by these Terms.
               </p>
             </div>
@@ -32,17 +32,17 @@ export default function TermsOfServicePage() {
             {/* Acceptance of Terms */}
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-4">
-                <CheckCircle className="w-6 h-6 text-accent" />
+                <CheckCircle className="w-6 h-6 text-[#ef393b]" />
                 <h2 className="text-2xl font-bold text-foreground">1. Acceptance of Terms</h2>
               </div>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  By accessing our website, engaging our services, or entering into any agreement with G1 Group, you
+                  By accessing our website, engaging our services, or entering into any agreement with Adams Minerals and Consultancy, you
                   acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy
                   Policy. If you do not agree to these Terms, you must not use our services.
                 </p>
                 <p>
-                  These Terms constitute a legally binding agreement between you and G1 Holdings & Security Limited. We
+                  These Terms constitute a legally binding agreement between you and Adams Minerals and Consultancy Limited. We
                   reserve the right to modify these Terms at any time, and such modifications will be effective
                   immediately upon posting.
                 </p>
@@ -52,18 +52,18 @@ export default function TermsOfServicePage() {
             {/* Services Description */}
             <div className="mb-12">
               <div className="flex items-center gap-3 mb-4">
-                <FileText className="w-6 h-6 text-accent" />
+                <FileText className="w-6 h-6 text-[#ef393b]" />
                 <h2 className="text-2xl font-bold text-foreground">2. Services Description</h2>
               </div>
               <div className="space-y-4 text-muted-foreground">
-                <p>G1 Group provides the following services:</p>
+                <p>Adams Minerals and Consultancy provides the following services:</p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Trade finance and capital solutions facilitation</li>
-                  <li>Commodities trading and brokerage services</li>
-                  <li>Logistics and supply chain coordination</li>
-                  <li>Insurance and risk advisory services</li>
-                  <li>Business consultancy and capacity building</li>
-                  <li>Investment and wealth management advisory</li>
+                  <li>Minerals trading and brokerage services</li>
+                  <li>Strategic consultancy and business advisory</li>
+                  <li>Resource assessment and evaluation</li>
+                  <li>Market analysis and intelligence</li>
+                  <li>Trade facilitation and coordination</li>
+                  <li>Business development and strategic planning</li>
                 </ul>
                 <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mt-6">
                   <div className="flex items-start gap-3">
@@ -71,9 +71,8 @@ export default function TermsOfServicePage() {
                     <div>
                       <p className="font-semibold text-amber-900">Important Notice</p>
                       <p className="text-amber-800 text-sm mt-1">
-                        G1 Group operates as a trade facilitation and brokerage firm. We do not directly own or operate
-                        transportation, storage, insurance, or financial institutions. All services are provided through
-                        licensed third-party operators.
+                        Adams Minerals and Consultancy operates as a specialized minerals trading and strategic consultancy firm. 
+                        We provide expert guidance and facilitate transactions through our network of licensed partners and service providers.
                       </p>
                     </div>
                   </div>
@@ -141,24 +140,24 @@ export default function TermsOfServicePage() {
               <h2 className="text-2xl font-bold text-foreground mb-4">6. Limitation of Liability</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  G1 Group acts solely as an intermediary and facilitator. We are not liable for the actions, omissions,
+                  Adams Minerals and Consultancy acts as a specialized consultant and facilitator. We are not liable for the actions, omissions,
                   or performance of third-party service providers, including:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Transportation and logistics operators</li>
-                  <li>Insurance providers and underwriters</li>
-                  <li>Financial institutions and lenders</li>
-                  <li>Commodities suppliers and buyers</li>
-                  <li>Security and storage service providers</li>
+                  <li>Mining and extraction operators</li>
+                  <li>Transportation and logistics providers</li>
+                  <li>Financial institutions and trade financiers</li>
+                  <li>Mineral suppliers and buyers</li>
+                  <li>Storage and processing facilities</li>
                 </ul>
                 <p className="mt-4">
-                  To the maximum extent permitted by law, G1 Group shall not be liable for any indirect, incidental,
+                  To the maximum extent permitted by law, Adams Minerals and Consultancy shall not be liable for any indirect, incidental,
                   special, consequential, or punitive damages, including loss of profits, revenue, data, or business
                   opportunities.
                 </p>
                 <p>
                   Our total liability for any claims arising from our services shall not exceed the fees paid by you to
-                  G1 Group in the 12 months preceding the claim.
+                  Adams Minerals and Consultancy in the 12 months preceding the claim.
                 </p>
               </div>
             </div>
@@ -168,7 +167,7 @@ export default function TermsOfServicePage() {
               <h2 className="text-2xl font-bold text-foreground mb-4">7. Indemnification</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  You agree to indemnify, defend, and hold harmless G1 Group, its affiliates, officers, directors,
+                  You agree to indemnify, defend, and hold harmless Adams Minerals and Consultancy, its affiliates, officers, directors,
                   employees, and agents from any claims, liabilities, damages, losses, costs, or expenses (including
                   reasonable attorneys' fees) arising from:
                 </p>
@@ -188,7 +187,7 @@ export default function TermsOfServicePage() {
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   All content, trademarks, logos, and intellectual property on our website and in our materials are
-                  owned by or licensed to G1 Group. You may not use, reproduce, modify, or distribute any content
+                  owned by or licensed to Adams Minerals and Consultancy. You may not use, reproduce, modify, or distribute any content
                   without our prior written consent.
                 </p>
               </div>
@@ -211,8 +210,8 @@ export default function TermsOfServicePage() {
               <h2 className="text-2xl font-bold text-foreground mb-4">10. Termination</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Either party may terminate services with written notice as specified in the service agreement. G1
-                  Group reserves the right to immediately suspend or terminate services if:
+                  Either party may terminate services with written notice as specified in the service agreement. Adams Minerals and Consultancy
+                  reserves the right to immediately suspend or terminate services if:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>You breach these Terms or any service agreement</li>
@@ -268,9 +267,9 @@ export default function TermsOfServicePage() {
               <div className="space-y-4 text-muted-foreground">
                 <p>For questions about these Terms of Service, please contact:</p>
                 <div className="bg-muted p-6 rounded-lg mt-4">
-                  <p className="font-semibold text-foreground">G1 Holdings & Security Limited</p>
+                  <p className="font-semibold text-foreground">Adams Minerals and Consultancy Limited</p>
                   <p>Legal Department</p>
-                  <p>Email: info@g1groupofcompanies.com</p>
+                  <p>Email: info@adamsmineralsconsultancy.com</p>
                   <p>Phone: +32 465 93 22 50 | +254 789 764 967 | +243 861 005 766</p>
                   <p>Address: Villa 46, Airport Rd, Nairobi, Kenya</p>
                 </div>

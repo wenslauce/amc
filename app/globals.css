@@ -4,40 +4,40 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* G1 Group corporate theme - navy, gold, and neutral tones */
+  /* Adams Minerals and Consultancy theme - navy (#373f51), red (#ef393b), gold (#d4af37) */
   --background: oklch(0.99 0.002 106.423);
-  --foreground: oklch(0.2 0.015 255.324);
+  --foreground: oklch(0.25 0.02 255.324);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.2 0.015 255.324);
+  --card-foreground: oklch(0.25 0.02 255.324);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.2 0.015 255.324);
-  --primary: oklch(0.25 0.04 255.324);
+  --popover-foreground: oklch(0.25 0.02 255.324);
+  --primary: oklch(0.28 0.04 258); /* Navy #373f51 */
   --primary-foreground: oklch(0.99 0.002 106.423);
-  --secondary: oklch(0.65 0.12 85.872);
-  --secondary-foreground: oklch(0.15 0.015 255.324);
+  --secondary: oklch(0.6 0.22 15); /* Red #ef393b for secondary actions */
+  --secondary-foreground: oklch(0.99 0.002 106.423);
   --muted: oklch(0.96 0.002 106.423);
   --muted-foreground: oklch(0.5 0.01 255.324);
-  --accent: oklch(0.65 0.12 85.872);
-  --accent-foreground: oklch(0.15 0.015 255.324);
-  --destructive: oklch(0.577 0.245 27.325);
+  --accent: oklch(0.6 0.22 15); /* Red #ef393b */
+  --accent-foreground: oklch(0.99 0.002 106.423);
+  --destructive: oklch(0.6 0.22 15); /* Red #ef393b */
   --destructive-foreground: oklch(0.99 0.002 106.423);
   --border: oklch(0.9 0.005 255.324);
   --input: oklch(0.9 0.005 255.324);
-  --ring: oklch(0.65 0.12 85.872);
-  --chart-1: oklch(0.25 0.04 255.324);
-  --chart-2: oklch(0.65 0.12 85.872);
-  --chart-3: oklch(0.5 0.08 255.324);
-  --chart-4: oklch(0.75 0.08 85.872);
+  --ring: oklch(0.6 0.22 15); /* Red ring */
+  --chart-1: oklch(0.28 0.04 258); /* Navy */
+  --chart-2: oklch(0.6 0.22 15); /* Red */
+  --chart-3: oklch(0.6 0.22 15); /* Red */
+  --chart-4: oklch(0.45 0.02 255.324); /* Light navy */
   --chart-5: oklch(0.35 0.06 255.324);
   --radius: 0.5rem;
   --sidebar: oklch(0.99 0.002 106.423);
-  --sidebar-foreground: oklch(0.2 0.015 255.324);
-  --sidebar-primary: oklch(0.25 0.04 255.324);
+  --sidebar-foreground: oklch(0.25 0.02 255.324);
+  --sidebar-primary: oklch(0.28 0.03 255.324);
   --sidebar-primary-foreground: oklch(0.99 0.002 106.423);
   --sidebar-accent: oklch(0.96 0.002 106.423);
-  --sidebar-accent-foreground: oklch(0.2 0.015 255.324);
+  --sidebar-accent-foreground: oklch(0.25 0.02 255.324);
   --sidebar-border: oklch(0.9 0.005 255.324);
-  --sidebar-ring: oklch(0.65 0.12 85.872);
+  --sidebar-ring: oklch(0.6 0.22 15);
 }
 
 .dark {
@@ -47,32 +47,32 @@
   --card-foreground: oklch(0.99 0.002 106.423);
   --popover: oklch(0.18 0.015 255.324);
   --popover-foreground: oklch(0.99 0.002 106.423);
-  --primary: oklch(0.65 0.12 85.872);
-  --primary-foreground: oklch(0.15 0.015 255.324);
-  --secondary: oklch(0.25 0.04 255.324);
+  --primary: oklch(0.28 0.04 258); /* Navy primary in dark mode */
+  --primary-foreground: oklch(0.99 0.002 106.423);
+  --secondary: oklch(0.6 0.22 15); /* Red for secondary actions */
   --secondary-foreground: oklch(0.99 0.002 106.423);
   --muted: oklch(0.22 0.015 255.324);
   --muted-foreground: oklch(0.7 0.01 255.324);
-  --accent: oklch(0.65 0.12 85.872);
-  --accent-foreground: oklch(0.15 0.015 255.324);
-  --destructive: oklch(0.5 0.2 27.325);
+  --accent: oklch(0.6 0.22 15); /* Red accent in dark mode */
+  --accent-foreground: oklch(0.99 0.002 106.423);
+  --destructive: oklch(0.6 0.22 15); /* Red */
   --destructive-foreground: oklch(0.99 0.002 106.423);
   --border: oklch(0.25 0.02 255.324);
   --input: oklch(0.25 0.02 255.324);
-  --ring: oklch(0.65 0.12 85.872);
-  --chart-1: oklch(0.65 0.12 85.872);
-  --chart-2: oklch(0.5 0.08 255.324);
-  --chart-3: oklch(0.75 0.08 85.872);
-  --chart-4: oklch(0.35 0.06 255.324);
+  --ring: oklch(0.6 0.22 15); /* Red ring */
+  --chart-1: oklch(0.6 0.22 15); /* Red */
+  --chart-2: oklch(0.28 0.04 258); /* Navy */
+  --chart-3: oklch(0.35 0.03 255.324); /* Light navy */
+  --chart-4: oklch(0.45 0.02 255.324); /* Light navy */
   --chart-5: oklch(0.55 0.1 85.872);
   --sidebar: oklch(0.18 0.015 255.324);
   --sidebar-foreground: oklch(0.99 0.002 106.423);
-  --sidebar-primary: oklch(0.65 0.12 85.872);
-  --sidebar-primary-foreground: oklch(0.15 0.015 255.324);
+  --sidebar-primary: oklch(0.6 0.22 15);
+  --sidebar-primary-foreground: oklch(0.99 0.002 106.423);
   --sidebar-accent: oklch(0.22 0.015 255.324);
   --sidebar-accent-foreground: oklch(0.99 0.002 106.423);
   --sidebar-border: oklch(0.25 0.02 255.324);
-  --sidebar-ring: oklch(0.65 0.12 85.872);
+  --sidebar-ring: oklch(0.6 0.22 15);
 }
 
 @theme inline {
@@ -162,5 +162,61 @@
 
   .glass-card:hover {
     @apply bg-primary-foreground/10 border-primary-foreground/20 transition-all duration-300;
+  }
+
+  /* Adams Minerals and Consultancy brand colors - using !important for specificity */
+  .amc-red {
+    color: #ef393b !important;
+  }
+
+  .amc-red-bg {
+    background-color: #ef393b !important;
+  }
+
+  .amc-navy {
+    color: #373f51 !important;
+  }
+
+  .amc-navy-bg {
+    background-color: #373f51 !important;
+  }
+
+  .amc-gold {
+    color: #ef393b !important;
+  }
+
+  .amc-gold-bg {
+    background-color: #ef393b !important;
+  }
+
+  /* Override button variants to use brand colors */
+  .btn-primary {
+    background-color: #ef393b !important;
+    color: white !important;
+  }
+
+  .btn-primary:hover {
+    background-color: #d73035 !important;
+  }
+
+  .btn-secondary {
+    background-color: #ef393b !important;
+    color: white !important;
+  }
+
+  .btn-secondary:hover {
+    background-color: #d73035 !important;
+  }
+
+  /* Special gradient for premium elements */
+  .amc-gradient {
+    background: linear-gradient(135deg, #373f51 0%, #ef393b 100%) !important;
+  }
+
+  .amc-gradient-text {
+    background: linear-gradient(135deg, #373f51 0%, #ef393b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }

@@ -16,7 +16,7 @@ export function ServiceQuoteEmail({ data }: { data: ServiceQuoteData }): ReactEl
     <div style={{ fontFamily: 'Arial, sans-serif', maxWidth: '600px', margin: '0 auto', padding: '20px' }}>
       <div style={{ backgroundColor: '#1e3a8a', color: 'white', padding: '20px', borderRadius: '8px 8px 0 0' }}>
         <h1 style={{ margin: 0, fontSize: '24px' }}>New Service Quote Request</h1>
-        <p style={{ margin: '10px 0 0 0', opacity: 0.9 }}>G1 Group of Companies</p>
+        <p style={{ margin: '10px 0 0 0', opacity: 0.9 }}>Adams Minerals and Consultancy</p>
       </div>
       
       <div style={{ backgroundColor: '#f8fafc', padding: '30px', borderRadius: '0 0 8px 8px', border: '1px solid #e2e8f0' }}>
@@ -95,7 +95,7 @@ export function ServiceQuoteConfirmationEmail({ data }: { data: ServiceQuoteData
     <div style={{ fontFamily: 'Arial, sans-serif', maxWidth: '600px', margin: '0 auto', padding: '20px' }}>
       <div style={{ backgroundColor: '#1e3a8a', color: 'white', padding: '20px', borderRadius: '8px 8px 0 0' }}>
         <h1 style={{ margin: 0, fontSize: '24px' }}>Quote Request Received</h1>
-        <p style={{ margin: '10px 0 0 0', opacity: 0.9 }}>G1 Group of Companies</p>
+        <p style={{ margin: '10px 0 0 0', opacity: 0.9 }}>Adams Minerals and Consultancy</p>
       </div>
       
       <div style={{ backgroundColor: '#f8fafc', padding: '30px', borderRadius: '0 0 8px 8px', border: '1px solid #e2e8f0' }}>
@@ -104,7 +104,7 @@ export function ServiceQuoteConfirmationEmail({ data }: { data: ServiceQuoteData
         </p>
         
         <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '20px' }}>
-          Thank you for your interest in our <strong>{data.serviceName}</strong> services. We have received your quote request and our specialists are already reviewing your requirements.
+          Thank you for your interest in our <strong>{data.serviceName}</strong> services. We have received your quote request and our mineral and consultancy specialists are already reviewing your requirements.
         </p>
 
         <div style={{ 
@@ -122,7 +122,7 @@ export function ServiceQuoteConfirmationEmail({ data }: { data: ServiceQuoteData
             <strong>Submitted:</strong> {new Date().toLocaleString()}
           </p>
           <p style={{ margin: '5px 0', fontSize: '14px' }}>
-            <strong>Reference ID:</strong> G1-{Date.now().toString().slice(-6)}
+            <strong>Reference ID:</strong> AMC-{Date.now().toString().slice(-6)}
           </p>
         </div>
 
@@ -149,12 +149,12 @@ export function ServiceQuoteConfirmationEmail({ data }: { data: ServiceQuoteData
           border: '1px solid #f59e0b',
           marginBottom: '20px'
         }}>
-          <h3 style={{ color: '#92400e', marginTop: 0 }}>Why Choose G1 Group?</h3>
+          <h3 style={{ color: '#92400e', marginTop: 0 }}>Why Choose Adams Minerals and Consultancy?</h3>
           <ul style={{ color: '#92400e', fontSize: '14px', lineHeight: '1.6' }}>
-            <li>15+ years of experience in high-value trade facilitation</li>
-            <li>Global network across 50+ countries</li>
-            <li>Comprehensive compliance and security protocols</li>
-            <li>24/7 support and real-time tracking capabilities</li>
+            <li>Specialized expertise in minerals trading and strategic consultancy</li>
+            <li>Global network across key mineral markets</li>
+            <li>Comprehensive regulatory compliance and professional standards</li>
+            <li>Dedicated support and expert guidance throughout your project</li>
           </ul>
         </div>
 
@@ -179,8 +179,8 @@ export function ServiceQuoteConfirmationEmail({ data }: { data: ServiceQuoteData
 
         <p style={{ fontSize: '16px', lineHeight: '1.6', marginTop: '20px' }}>
           Best regards,<br />
-          <strong>G1 Group of Companies</strong><br />
-          <em>Securing High-Value Trade Across Borders</em>
+          <strong>Adams Minerals and Consultancy</strong><br />
+          <em>Excellence in Minerals and Strategic Consultancy</em>
         </p>
       </div>
     </div>
