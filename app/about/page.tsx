@@ -51,7 +51,7 @@ export default function AboutPage() {
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
                   Adams Minerals and Consultancy Limited is a specialized minerals trading and strategic consultancy 
-                  firm headquartered in Nairobi, Kenya.
+                  firm headquartered in Entebbe, Uganda.
                 </p>
                 <p>
                   We provide expert minerals trading and strategic consultancy services across Africa, the Middle East, 

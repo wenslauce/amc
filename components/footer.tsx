@@ -94,7 +94,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="mt-0.5 flex-shrink-0 text-[#ef393b]" />
                 <span className="text-primary-foreground/80">
-                  Villa 46, Airport Rd, Nairobi, Kenya
+                  Villa 46, Airport Rd, Entebbe, Uganda
                 </span>
               </li>
               <li className="flex items-center gap-3">

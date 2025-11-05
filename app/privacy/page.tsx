@@ -258,7 +258,7 @@ export default function PrivacyPolicyPage() {
                   <p>Data Protection Officer</p>
                   <p>Email: info@adamsmineralsconsultancy.com</p>
                   <p>Phone: +32 465 93 22 50 | +254 789 764 967 | +243 861 005 766</p>
-                  <p>Address: Villa 46, Airport Rd, Nairobi, Kenya</p>
+                  <p>Address: Villa 46, Airport Rd, Entebbe, Uganda</p>
                 </div>
               </div>
             </div>

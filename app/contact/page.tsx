@@ -88,7 +88,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Headquarters",
-      details: ["Villa 46, Airport Rd, Nairobi, Kenya", "East Africa Hub"],
+      details: ["Villa 46, Airport Rd, Entebbe, Uganda", "East Africa Hub"],
     },
     {
       icon: Phone,
@@ -110,7 +110,7 @@ export default function ContactPage() {
   const offices = [
     {
       region: "East Africa",
-      location: "Nairobi, Kenya",
+      location: "Entebbe, Uganda",
       description: "Headquarters & Regional Hub",
     },
     {

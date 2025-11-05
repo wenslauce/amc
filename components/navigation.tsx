@@ -17,13 +17,14 @@ export function Navigation() {
 
   const services = [
     { name: "All Services", href: "/services" },
-    { name: "Trade Finance & Capital Solutions", href: "/services/trade-finance" },
-    { name: "Gold Trading (Our Specialty)", href: "/services/commodities-trading/gold" },
-    { name: "Commodities Trading & Brokerage", href: "/services/commodities-trading" },
+    { name: "Minerals Trading", href: "/services/commodities-trading" },
+    { name: "Strategic Consultancy", href: "/services/consultancy" },
+    { name: "Trade Facilitation & Finance", href: "/services/trade-finance" },
     { name: "Logistics & Supply Chain", href: "/services/logistics" },
-    { name: "Insurance & Risk Advisory", href: "/services/insurance" },
-    { name: "Business Consultancy", href: "/services/consultancy" },
-    { name: "Investment & Wealth Management", href: "/services/wealth-management" },
+    { name: "Risk Management & Insurance", href: "/services/insurance" },
+    { name: "Investment Advisory", href: "/services/wealth-management" },
+    { name: "Crypto Desk & Digital Payments", href: "/services/crypto-desk" },
+    { name: "Regulatory Compliance & Legal Advisory", href: "/services/compliance" },
   ]
 
   const additionalItems = [

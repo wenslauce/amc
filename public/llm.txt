@@ -1,7 +1,7 @@
 # Adams Minerals and Consultancy - AI/LLM Information File
 
 ## Company Overview
-Adams Minerals and Consultancy Limited is a specialized minerals trading and strategic consultancy firm headquartered in Nairobi, Kenya. We provide expert guidance in mineral resources, trade facilitation, and comprehensive business consultancy services with a focus on excellence in minerals and strategic consultancy.
+Adams Minerals and Consultancy Limited is a specialized minerals trading and strategic consultancy firm headquartered in Entebbe, Uganda. We provide expert guidance in mineral resources, trade facilitation, and comprehensive business consultancy services with a focus on excellence in minerals and strategic consultancy.
 
 ## Core Business Areas
 
@@ -95,7 +95,7 @@ Adams Minerals and Consultancy Limited is a specialized minerals trading and str
 - **Confidentiality**: Strict confidentiality and data protection protocols
 
 ## Contact Information
-- **Address**: Villa 46, Airport Rd, Nairobi, Kenya
+- **Address**: Villa 46, Airport Rd, Entebbe, Uganda
 - **Primary Phone**: +32 465 93 22 50 | +254 789 764 967 | +243 861 005 766
 - **Emergency Hotline**: +243 861 005 766 (24/7)
 - **Email**: info@adamsmineralsconsultancy.com

@@ -32,7 +32,7 @@ export default function CareersPage() {
     {
       title: "Trade Finance Manager",
       department: "Trade Finance",
-      location: "Nairobi, Kenya",
+      location: "Entebbe, Uganda",
       type: "Full-time",
       description:
         "Lead structured trade finance deals, manage client relationships, and coordinate with international banking partners.",
@@ -40,7 +40,7 @@ export default function CareersPage() {
     {
       title: "Commodities Trader",
       department: "Commodities Trading",
-      location: "Nairobi, Kenya",
+      location: "Entebbe, Uganda",
       type: "Full-time",
       description:
         "Execute commodity trades, manage supplier and buyer relationships, and analyze market trends for agricultural products and metals.",
@@ -48,7 +48,7 @@ export default function CareersPage() {
     {
       title: "Logistics Coordinator",
       department: "Logistics & Security",
-      location: "Nairobi, Kenya",
+      location: "Entebbe, Uganda",
       type: "Full-time",
       description:
         "Coordinate cross-border shipments, manage customs clearance, and oversee SKR-secured logistics operations.",
@@ -56,7 +56,7 @@ export default function CareersPage() {
     {
       title: "Risk Analyst",
       department: "Risk Advisory",
-      location: "Nairobi, Kenya",
+      location: "Entebbe, Uganda",
       type: "Full-time",
       description:
         "Conduct due diligence, assess transaction risks, and develop risk mitigation strategies for high-value deals.",
@@ -64,7 +64,7 @@ export default function CareersPage() {
     {
       title: "Business Development Manager",
       department: "Business Development",
-      location: "Nairobi, Kenya / Dubai, UAE",
+      location: "Entebbe, Uganda / Dubai, UAE",
       type: "Full-time",
       description:
         "Identify new business opportunities, develop strategic partnerships, and expand G1 Group's market presence.",
@@ -72,7 +72,7 @@ export default function CareersPage() {
     {
       title: "Solar Project Engineer",
       department: "Energy Solutions",
-      location: "Nairobi, Kenya",
+      location: "Entebbe, Uganda",
       type: "Full-time",
       description:
         "Design and oversee commercial solar installations, manage EPC projects, and ensure quality delivery.",
