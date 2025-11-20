@@ -98,7 +98,7 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Email",
-      details: ["info@g1groupofcompanies.com", "support@g1groupofcompanies.com"],
+      details: ["info@adamsmineralsconsultancy.com", "support@adamsmineralsconsultancy.com"],
     },
     {
       icon: Clock,
